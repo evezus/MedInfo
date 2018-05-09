@@ -1,0 +1,4 @@
+flask
+flask_sqlalchemy
+Flask-Marshmallow 0.9.0
+marshmallow-sqlalchemy
