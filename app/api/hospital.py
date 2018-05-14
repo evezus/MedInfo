@@ -114,3 +114,23 @@ def hospital_add_type():
                     'error_msg': 'Use POST parameters.'})
 
 
+@app.route('/hospital/all')
+def hospital_all():
+    try:
+        query = db.session.query(models.Hospital, models.TypeHospital)\
+            .join(models.TypeHospital).all()
+
+        hospitals = []
+        for hospital, type_hospital in query:
+            hospital_schema = models.HospitalSchema()
+            hospital_json = hospital_schema.dump(hospital).data
+
+            type_hospital_schema = models.TypeHospitalSchema()
+            type_hospital_json = type_hospital_schema.dump(type_hospital).data
+
+            hospitals.append({'hospital': hospital_json, 'type_hospital': type_hospital_json})
+
+        return jsonify({'hospitals': hospitals})
+    except Exception as ex:
+        print(ex)
+        return jsonify({'error_code': '3', 'error_msg': 'Error connect to database.'})

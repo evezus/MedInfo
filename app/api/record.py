@@ -9,7 +9,7 @@ def record_add():
         try:
             token = request.form['access_token']
             if not validate.hash(token):
-                return jsonify({'error_code': '1', 'error_msg': 'Access token is not valid.'})
+                raise Exception('Access token is not valid.')
             user = auxiliary_metods.get_user(token)
         except Exception:
             return jsonify({'error_code': '1', 'error_msg': 'Access token is not valid.'})
