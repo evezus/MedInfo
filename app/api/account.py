@@ -73,7 +73,7 @@ def account_register():
         first_name = request.form['first_name']
         phone = request.form['phone']
         sex = request.form['sex']
-        address = request.form['address']
+        #address = request.form['address']
         password = request.form['password']
         utype = 'patient'
 
@@ -126,10 +126,13 @@ def account_register():
         photo_path = '/user-photo/default.png'
 
         # Format and Validate Address
+        address = ''
+        '''
         address = address.title()
         if not validate.adress(address):
             return jsonify(
                 {'error_code': '9', 'error_msg': 'Value [address] is not valid.'})
+        '''
 
         # Check PASSWORD
         if not validate.passwd(password):
