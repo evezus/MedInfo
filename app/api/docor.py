@@ -146,6 +146,7 @@ def doctor_all():
 
     doctors = []
     for doctor, user, hospital, type_doctor in query:
+
         doctor_schema = models.DoctorSchema()
         doctor_json = doctor_schema.dump(doctor).data
 
@@ -158,6 +159,7 @@ def doctor_all():
 
         type_doctor_schema = models.TypeDoctorSchema()
         type_doctor_json = type_doctor_schema.dump(type_doctor).data
+
         doctors.append({'doctor': doctor_json, 'user': user_json,
                         'hospital': hospital_json, 'type_doctor': type_doctor_json})
 

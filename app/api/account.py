@@ -66,16 +66,21 @@ def account_getInfo():
 @app.route('/account/register', methods=['POST', 'GET'])
 def account_register():
     if request.method == 'POST':
-        email = request.form['email']
-        date_of_birth = request.form['date_of_birth']
-        last_name = request.form['last_name']
-        mid_name = request.form['mid_name']
-        first_name = request.form['first_name']
-        phone = request.form['phone']
-        sex = request.form['sex']
-        #address = request.form['address']
-        password = request.form['password']
-        utype = 'patient'
+        print(request.form)
+        try:
+            email = request.form['email']
+            date_of_birth = request.form['date_of_birth']
+            last_name = request.form['last_name']
+            mid_name = request.form['mid_name']
+            first_name = request.form['first_name']
+            phone = request.form['phone']
+            sex = request.form['sex']
+            # address = request.form['address']
+            password = request.form['password']
+            utype = 'patient'
+        except:
+            return jsonify({'error_code': '0',
+                            'error_msg': 'Use POST parameters.'})
 
         # Validation EMAIL
         email = email.lower()

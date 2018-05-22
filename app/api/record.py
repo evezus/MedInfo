@@ -80,12 +80,34 @@ def record_get():
         if user == None:
             return jsonify({'error_code': '2', 'error_msg': 'User authorization failed: no access token passed.'})
 
-        records = db.session.query(models.Record.id, models.Record.doctor_id,
-                                   models.Record.date_record, models.Record.date_create) \
+        query = db.session.query(models.Record, models.Doctor, models.User, models.Hospital, models.TypeDoctor) \
+            .join(models.Doctor) \
+            .join(models.User) \
+            .join(models.Hospital) \
+            .join(models.TypeDoctor) \
             .filter(models.Record.pacient_id == user.id) \
             .all()
 
-        records_schema = models.RecordSchema(many=True, )
-        output = records_schema.dump(records).data
+        list_records = []
+        for record, doctor, user, hospital, type_doctor in query:
 
-        return jsonify({'records': output})
+            records_schema = models.RecordSchema()
+            record_json = records_schema.dump(record).data
+
+            doctor_schema = models.DoctorSchema()
+            doctor_json = doctor_schema.dump(doctor).data
+
+            user_schema = models.UserSchema(
+                only=('last_name', 'first_name', 'mid_name', 'photo_path', 'sex'))
+            user_json = user_schema.dump(user).data
+
+            hospital_schema = models.HospitalSchema()
+            hospital_json = hospital_schema.dump(hospital).data
+
+            type_doctor_schema = models.TypeDoctorSchema()
+            type_doctor_json = type_doctor_schema.dump(type_doctor).data
+
+            list_records.append({'record': record_json, 'doctor': doctor_json, 'user': user_json,
+                        'hospital': hospital_json, 'type_doctor': type_doctor_json})
+
+        return jsonify({'records': list_records})

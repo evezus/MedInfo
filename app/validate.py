@@ -17,7 +17,7 @@ def name(value):
 
 
 def phone(value):
-    if re.match(r"^\+[0-9]{12}$", value):
+    if re.match(r"^[0-9]{12}$", value):
         return True
     else:
         return False
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     print(email('asd@adasd.com'))
     print(date('1997/01/09'))
     print(name('Кіра'))
-    print(phone('+380971151577'))
+    print(phone('380971151577'))
     print(adress('Івана Франка, 30, Івано-Франківськ'))
     print('date_time', date_time('05-02-2018 23:33'))
     print('blood_type', blood_type('2'))
