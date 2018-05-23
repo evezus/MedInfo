@@ -136,16 +136,16 @@ def doctor_get_id(id):
 def doctor_all():
     try:
         query = db.session \
-            .query(models.Doctor, models.User, models.Hospital, models.TypeDoctor) \
+            .query(models.Doctor, models.User, models.TypeDoctor) \
             .join(models.User) \
-            .join(models.Hospital) \
             .join(models.TypeDoctor) \
+            .group_by(models.Doctor.user_id) \
             .all()
     except Exception:
         return jsonify({'error_code': '1', 'error_msg': 'Doctors does not exist.'})
 
     doctors = []
-    for doctor, user, hospital, type_doctor in query:
+    for doctor, user, type_doctor in query:
 
         doctor_schema = models.DoctorSchema()
         doctor_json = doctor_schema.dump(doctor).data
@@ -154,14 +154,24 @@ def doctor_all():
             only=('id', 'last_name', 'first_name', 'mid_name', 'photo_path', 'sex'))
         user_json = user_schema.dump(user).data
 
-        hospital_schema = models.HospitalSchema()
-        hospital_json = hospital_schema.dump(hospital).data
-
         type_doctor_schema = models.TypeDoctorSchema()
         type_doctor_json = type_doctor_schema.dump(type_doctor).data
 
+
+        subquery = db.session \
+            .query(models.Doctor, models.Hospital) \
+            .join(models.Hospital) \
+            .filter(models.Doctor.user_id == user.id) \
+            .all()
+
+        hosp_list = []
+        for doc, hosp in subquery:
+            hospital_schema = models.HospitalSchema()
+            hospital_json = hospital_schema.dump(hosp).data
+            hosp_list.append(hospital_json)
+
         doctors.append({'doctor': doctor_json, 'user': user_json,
-                        'hospital': hospital_json, 'type_doctor': type_doctor_json})
+                        'hospitals': hosp_list, 'type_doctor': type_doctor_json})
 
     return jsonify({'count': len(query), 'doctors': doctors})
 
@@ -201,5 +211,3 @@ def doctor_in_hospital(id):
                         'type_doctor': type_doctor_json})
 
     return jsonify({'count': len(query), 'doctors': doctors})
-
-
