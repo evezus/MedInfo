@@ -1,3 +1,6 @@
+import string
+import hashlib
+import random
 from . import db, models
 
 def get_user(token):
@@ -10,3 +13,8 @@ def get_user(token):
         .first()
 
     return user
+
+def id_generator(chars=string.ascii_uppercase + string.digits):
+    rnd = random.sample(''.join(random.choice(chars) for _ in range(64)), k=random.randint(32, 64))
+    rnd_hash = hashlib.sha256(''.join(rnd).encode('utf-8')).hexdigest()
+    return rnd_hash

@@ -96,6 +96,13 @@ def blood_type(value):
         return False
 
 
+def file_type(value):
+    if re.match(r"^.+\.(png|jpg|jpeg)$", value):
+        return True
+    else:
+        return False
+
+
 if __name__ == '__main__':
     print(email('asd@adasd.com'))
     print(date('1997/01/09'))
@@ -104,3 +111,5 @@ if __name__ == '__main__':
     print(adress('Івана Франка, 30, Івано-Франківськ'))
     print('date_time', date_time('05-02-2018 23:33'))
     print('blood_type', blood_type('2'))
+    print('file_type', file_type('asasdasdd.png'))
+

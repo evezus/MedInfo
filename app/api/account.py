@@ -1,8 +1,9 @@
+import os
+import string
 import hashlib
 import random
 from app import models, validate, app, db, auxiliary_metods
-from flask import Flask, jsonify, redirect, url_for, request
-
+from flask import Flask, jsonify, redirect, url_for, request, send_from_directory
 
 @app.route('/account/auth', methods=['POST', 'GET'])
 def account_auth():
@@ -45,12 +46,14 @@ def account_auth():
 @app.route('/account/getInfo', methods=['POST', 'GET'])
 def account_getInfo():
     if request.method == 'POST':
-        token = request.form['access_token']
-        if not validate.hash(token):
+        try:
+            token = request.form['access_token']
+            if not validate.hash(token):
+                raise NameError('Access token is not valid.')
+        except:
             return jsonify({'error_code': '1', 'error_msg': 'Access token is not valid.'})
 
         user = auxiliary_metods.get_user(token)
-
         if user == None:
             return jsonify({'error_code': '2', 'error_msg': 'User authorization failed: no access token passed.'})
 
@@ -159,3 +162,50 @@ def account_register():
 
     return jsonify({'error_code': '0',
                     'error_msg': 'Use POST parameters.'})
+
+
+@app.route('/account/setPhoto', methods=['POST', 'GET'])
+def account_set_photo():
+    MAX_FILE_SIZE = 1024 * 1024 + 1
+    if request.method == 'POST':
+        try:
+            token = request.form['access_token']
+            if not validate.hash(token):
+                raise NameError('Access token is not valid.')
+        except:
+            return jsonify({'error_code': '1', 'error_msg': 'Access token is not valid.'})
+
+        user = auxiliary_metods.get_user(token)
+        if user == None:
+            return jsonify({'error_code': '2', 'error_msg': 'User authorization failed: no access token passed.'})
+
+        try:
+            file = request.files['file']
+            if file and validate.file_type(file.filename):
+                id = auxiliary_metods.id_generator()
+                filename = file.filename.split('.')[1]
+                filename = os.path.join('photo/', id + '.' + filename)
+                print(filename)
+                file.save(filename)
+                try:
+                    db.session.query(models.User)\
+                        .filter(models.User.id == user.id)\
+                        .update({'photo_path': filename})
+                    db.session.commit()
+                except Exception:
+                    db.session.rollback()
+                    return jsonify({'error_code': '3', 'error_msg': 'Error connect to database.'})
+
+                return jsonify({'photo': filename})
+            else:
+                return jsonify({'error_code': '3', 'error_msg': 'Error file type.'})
+        except Exception as ex:
+            print(ex)
+
+    return jsonify({'error_code': '0',
+                    'error_msg': 'Use post query parameters.'})
+
+
+@app.route('/photo/<filename>')
+def uploaded_file(filename):
+    return send_from_directory('photo', filename)
