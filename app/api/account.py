@@ -205,7 +205,3 @@ def account_set_photo():
     return jsonify({'error_code': '0',
                     'error_msg': 'Use post query parameters.'})
 
-
-@app.route('/photo/<filename>')
-def uploaded_file(filename):
-    return send_from_directory('photo', filename)
