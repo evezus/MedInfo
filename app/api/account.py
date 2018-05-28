@@ -5,6 +5,7 @@ import random
 from app import models, validate, app, db, auxiliary_metods
 from flask import Flask, jsonify, redirect, url_for, request, send_from_directory
 
+
 @app.route('/account/auth', methods=['POST', 'GET'])
 def account_auth():
     if request.method == 'POST':
@@ -170,6 +171,7 @@ def account_set_photo():
     if request.method == 'POST':
         try:
             token = request.form['access_token']
+            print(token)
             if not validate.hash(token):
                 raise NameError('Access token is not valid.')
         except:
@@ -184,13 +186,19 @@ def account_set_photo():
             if file and validate.file_type(file.filename):
                 id = auxiliary_metods.id_generator()
                 filename = file.filename.split('.')[1]
-                filename = os.path.join('photo/', id + '.' + filename)
-                print(filename)
+                pub_name = 'assets\\photo\\' + id + '.' + filename;
+                filename = os.path.join('dist\\' + pub_name)
                 file.save(filename)
+
                 try:
-                    db.session.query(models.User)\
-                        .filter(models.User.id == user.id)\
-                        .update({'photo_path': filename})
+                    os.remove(os.path.join('dist\\' + user.photo_path))
+                except:
+                    print('Error delete last photo user')
+
+                try:
+                    db.session.query(models.User) \
+                        .filter(models.User.id == user.id) \
+                        .update({'photo_path': pub_name})
                     db.session.commit()
                 except Exception:
                     db.session.rollback()
@@ -204,4 +212,3 @@ def account_set_photo():
 
     return jsonify({'error_code': '0',
                     'error_msg': 'Use post query parameters.'})
-
