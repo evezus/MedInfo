@@ -61,8 +61,10 @@ def account_getInfo():
         user_schema = models.UserSchema()
         output = user_schema.dump(user).data
 
-        return jsonify({'account': output})
+        if os.path.exists(os.path.join('dist\\' + output['photo_path'])) == False:
+            output['photo_path'] = 'assets\\img\\user.jpg'
 
+        return jsonify({'account': output})
     return jsonify({'error_code': '0',
                     'error_msg': 'User authorization failed: post parameters [access_token] not found.'})
 
@@ -132,7 +134,7 @@ def account_register():
                 {'error_code': '8', 'error_msg': 'Value [sex] is not valid.'})
 
         # Create Photo Path
-        photo_path = '/user-photo/default.png'
+        photo_path = 'assets\\img\\user.jpg'
 
         # Format and Validate Address
         address = ''
@@ -191,7 +193,8 @@ def account_set_photo():
                 file.save(filename)
 
                 try:
-                    os.remove(os.path.join('dist\\' + user.photo_path))
+                    if not user.photo_path.index('user.jpg'):
+                        os.remove(os.path.join('dist\\' + user.photo_path))
                 except:
                     print('Error delete last photo user')
 
