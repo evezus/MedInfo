@@ -111,3 +111,33 @@ def record_get():
                         'hospital': hospital_json, 'type_doctor': type_doctor_json})
 
         return jsonify({'records': list_records})
+
+
+@app.route('/record/del', methods=['POST', 'GET'])
+def record_del():
+    if request.method == 'POST':
+        try:
+            token = request.form['access_token']
+            if not validate.hash(token):
+                raise('Access token is not valid.')
+            user = auxiliary_metods.get_user(token)
+        except Exception:
+            return jsonify({'error_code': '1', 'error_msg': 'Access token is not valid.'})
+
+        if user == None:
+            return jsonify({'error_code': '2', 'error_msg': 'User authorization failed: no access token passed.'})
+
+        try:
+            record_id = int(request.form['record_id'])
+        except Exception:
+            return jsonify(
+                {'error_code': '3', 'error_msg': 'Value [record_id] is not valid, value should be a number.'})
+
+        try:
+            db.session.query(models.Record).filter(models.Record.id == record_id).delete()
+            db.session.commit()
+            return jsonify({'Good': 'Deleted record.' , 'record_id': record_id})
+        except:
+            db.session.rollback()
+            return jsonify({'error_code': '4', 'error_msg': 'Try again later.'})
+        return jsonify({'records'})
