@@ -461,6 +461,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ConfigService = /** @class */ (function () {
     function ConfigService() {
+        //url_base = `http://127.0.0.1:881`;
         this.url_base = "";
     }
     ConfigService = __decorate([
@@ -484,7 +485,7 @@ module.exports = ".card.doctor {\r\n  border: 0 !important;\r\n  margin-bottom: 
 /***/ "./src/app/doctor/doctor.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">\n    <div *ngFor=\"let doctor of doctors['doctors']\" class=\"card doctor\">\n      <div class=\"card-body\">\n        <div class=\"row\">\n          <div class=\"col-auto\">\n            <img class=\"img-doctor rounded\"\n                 alt=\"{{doctor['user'].last_name }} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\"\n                 src=\"http://127.0.0.1:5000/{{doctor.user.photo_path}}\">\n          </div>\n          <div class=\"col\">\n            <h1 class=\"card-title\">\n              {{doctor['user'].last_name}} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\n            </h1>\n            <h2 class=\"card-subtitle mb-2 text-muted\">\n              <i class=\"fa fa-user-md\" aria-hidden=\"true\"></i>\n              {{doctor['type_doctor'].label}}\n            </h2>\n            <button (click)=\"modalRecordAdd(template, doctor['doctor'].id)\" type=\"button\"\n                    class=\"btn btn-sm btn-link btn-record\">Записатись\n            </button>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer text-center p-0\">\n        <ul class=\"list-group list-group-flush p-0\">\n\n          <li *ngFor=\"let hospital of doctor.hospitals\" class=\"list-group-item\">\n            <i aria-hidden=\"true\" class=\"fa fa-hospital-o\"></i>\n            {{hospital['name']}}\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n\n<ng-template #template>\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title pull-left\">Запис на прийом</h4>\n    <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <h6>Виберіть день запису: <span>{{select_date | date: 'dd MMM'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let d_rec of date_records\" (click)=\"onClickDate($event, d_rec)\">\n        {{d_rec | date: 'dd MMM'}}\n        {{d_rec | date: 'EEEE'}}\n      </li>\n    </ul>\n    <h6>Виберіть зручний для вас час: <span>{{select_time | date: 'HH:mm'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let t_rec of time_records\" (click)=\"onClickTime($event, t_rec)\">\n        {{t_rec | date: 'HH:mm'}}\n      </li>\n    </ul>\n    <div *ngIf=\"alertBool\" class=\"alert alert-warning alert-dismissible fade show mt-3\" role=\"alert\">\n      <strong>Виберіть дату і час!</strong> Це обов'язкові поля.\n      <button (click)=\"alertBool = false\" type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"addRecord()\">Записатись на прийом</button>\n  </div>\n</ng-template>\n\n<hr>\n<footer class=\"container\">\n  <p>© MEDINFO 2018</p>\n</footer>\n"
+module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">\n    <div *ngFor=\"let doctor of doctors['doctors']\" class=\"card doctor\">\n      <div class=\"card-body\">\n        <div class=\"row\">\n          <div class=\"col-auto\">\n            <img class=\"img-doctor rounded\"\n                 alt=\"{{doctor['user'].last_name }} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\"\n                 src=\"{{url_base}}/{{doctor.user.photo_path}}\">\n          </div>\n          <div class=\"col\">\n            <h1 class=\"card-title\">\n              {{doctor['user'].last_name}} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\n            </h1>\n            <h2 class=\"card-subtitle mb-2 text-muted\">\n              <i class=\"fa fa-user-md\" aria-hidden=\"true\"></i>\n              {{doctor['type_doctor'].label}}\n            </h2>\n            <button (click)=\"modalRecordAdd(template, doctor['doctor'].id)\" type=\"button\"\n                    class=\"btn btn-sm btn-link btn-record\">Записатись\n            </button>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer text-center p-0\">\n        <ul class=\"list-group list-group-flush p-0\">\n\n          <li *ngFor=\"let hospital of doctor.hospitals\" class=\"list-group-item\">\n            <i aria-hidden=\"true\" class=\"fa fa-hospital-o\"></i>\n            {{hospital['name']}}\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n\n<ng-template #template>\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title pull-left\">Запис на прийом</h4>\n    <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <h6>Виберіть день запису: <span>{{select_date | date: 'dd MMM'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let d_rec of date_records\" (click)=\"onClickDate($event, d_rec)\">\n        {{d_rec | date: 'dd MMM'}}\n        {{d_rec | date: 'EEEE'}}\n      </li>\n    </ul>\n    <h6>Виберіть зручний для вас час: <span>{{select_time | date: 'HH:mm'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let t_rec of time_records\" (click)=\"onClickTime($event, t_rec)\">\n        {{t_rec | date: 'HH:mm'}}\n      </li>\n    </ul>\n    <div *ngIf=\"alertBool\" class=\"alert alert-warning alert-dismissible fade show mt-3\" role=\"alert\">\n      <strong>Виберіть дату і час!</strong> Це обов'язкові поля.\n      <button (click)=\"alertBool = false\" type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"addRecord()\">Записатись на прийом</button>\n  </div>\n</ng-template>\n\n<hr>\n<footer class=\"container\">\n  <p>© MEDINFO 2018</p>\n</footer>\n"
 
 /***/ }),
 
@@ -498,6 +499,7 @@ module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__ = __webpack_require__("./node_modules/ngx-bootstrap/modal/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__record_record_service__ = __webpack_require__("./src/app/record/record.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_service__ = __webpack_require__("./src/app/config.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -512,15 +514,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var DoctorComponent = /** @class */ (function () {
-    function DoctorComponent(doctorService, modalService, recordService, datePipe) {
+    function DoctorComponent(doctorService, modalService, recordService, configService, datePipe) {
         this.doctorService = doctorService;
         this.modalService = modalService;
         this.recordService = recordService;
+        this.configService = configService;
         this.datePipe = datePipe;
         /** onClick */
         this.elem_sel_date = null;
         this.elem_sel_time = null;
+        this.url_base = this.configService.url_base;
         this.doctors = [];
         this.date_records = [];
         this.time_records = [];
@@ -608,6 +613,7 @@ var DoctorComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__doctor_service__["a" /* DoctorService */],
             __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__["a" /* BsModalService */],
             __WEBPACK_IMPORTED_MODULE_3__record_record_service__["a" /* RecordService */],
+            __WEBPACK_IMPORTED_MODULE_5__config_service__["a" /* ConfigService */],
             __WEBPACK_IMPORTED_MODULE_4__angular_common__["d" /* DatePipe */]])
     ], DoctorComponent);
     return DoctorComponent;
@@ -1358,7 +1364,7 @@ module.exports = ".user-card {\r\n  background: white;\r\n  border-radius: 2px;\
 /***/ "./src/app/user/card/card.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card-b\">\n  <div class=\"user-photo text-center pt-4\">\n    <i class=\"fa fa-camera upload-icon\" aria-hidden=\"true\" (click)=\"photoInput.click()\"></i>\n    <img class=\"photo\" src=\"http://127.0.0.1:5000/{{userInfo._photo_path}}\" class=\"img-user\" alt=\"...\" (click)=\"photoInput.click()\">\n    <input type=\"file\" id=\"file\" (change)=\"handleFileInput($event.target.files)\" #photoInput>\n  </div>\n  <div class=\"user-info\">\n    <div class=\"user-name\">\n      {{userInfo._last_name}} {{userInfo._first_name}}\n    </div>\n    <h2 *ngIf=\"userInfo._adress != ''\" class=\"user-address\">\n      <i aria-hidden=\"true\" class=\"fa fa-map-marker\"></i>\n      {{userInfo._adress}}\n    </h2>\n    <h2 class=\"user-address\">\n      <i class=\"fa fa-envelope-square\" aria-hidden=\"true\"></i>\n      {{userInfo._email}}\n    </h2>\n  </div>\n</div>\n"
+module.exports = "<div class=\"card-b\">\n  <div class=\"user-photo text-center pt-4\">\n    <i class=\"fa fa-camera upload-icon\" aria-hidden=\"true\" (click)=\"photoInput.click()\"></i>\n    <img class=\"photo\" src=\"{{url_base}}/{{userInfo._photo_path}}\" class=\"img-user\" alt=\"...\" (click)=\"photoInput.click()\">\n    <input type=\"file\" id=\"file\" (change)=\"handleFileInput($event.target.files)\" #photoInput>\n  </div>\n  <div class=\"user-info\">\n    <div class=\"user-name\">\n      {{userInfo._last_name}} {{userInfo._first_name}}\n    </div>\n    <h2 *ngIf=\"userInfo._adress != ''\" class=\"user-address\">\n      <i aria-hidden=\"true\" class=\"fa fa-map-marker\"></i>\n      {{userInfo._adress}}\n    </h2>\n    <h2 class=\"user-address\">\n      <i class=\"fa fa-envelope-square\" aria-hidden=\"true\"></i>\n      {{userInfo._email}}\n    </h2>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1370,6 +1376,7 @@ module.exports = "<div class=\"card-b\">\n  <div class=\"user-photo text-center 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__user__ = __webpack_require__("./src/app/user/user.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_service__ = __webpack_require__("./src/app/user/user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_service__ = __webpack_require__("./src/app/config.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1382,11 +1389,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CardComponent = /** @class */ (function () {
-    function CardComponent(userService) {
+    function CardComponent(userService, configService) {
         var _this = this;
         this.userService = userService;
+        this.configService = configService;
         this.fileToUpload = null;
+        this.url_base = this.configService.url_base;
         this.userInfo = new __WEBPACK_IMPORTED_MODULE_1__user__["a" /* User */](0, '', '', '', '', '', '', '', '', '', '');
         this.userService.getUser().subscribe(function (res) {
             if (res['account'] !== undefined) {
@@ -1416,7 +1426,8 @@ var CardComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/user/card/card.component.html"),
             styles: [__webpack_require__("./src/app/user/card/card.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__user_service__["a" /* UserService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__user_service__["a" /* UserService */],
+            __WEBPACK_IMPORTED_MODULE_3__config_service__["a" /* ConfigService */]])
     ], CardComponent);
     return CardComponent;
 }());

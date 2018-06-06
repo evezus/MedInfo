@@ -193,7 +193,7 @@ def account_set_photo():
                 file.save(filename)
 
                 try:
-                    if not user.photo_path.index('user.jpg'):
+                    if user.photo_path.find('user.jpg') == -1:
                         os.remove(os.path.join('dist\\' + user.photo_path))
                 except:
                     print('Error delete last photo user')
