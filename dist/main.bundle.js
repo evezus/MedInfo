@@ -99,9 +99,9 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__ = __webpack_require__("./node_modules/ngx-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_locales_uk__ = __webpack_require__("./node_modules/@angular/common/locales/uk.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__ = __webpack_require__("./node_modules/ngx-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_locales_uk__ = __webpack_require__("./node_modules/@angular/common/locales/uk.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_service__ = __webpack_require__("./src/app/config.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hospital_hospital_service__ = __webpack_require__("./src/app/hospital/hospital.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor_service__ = __webpack_require__("./src/app/doctor/doctor.service.ts");
@@ -136,7 +136,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_7__angular_common__["j" /* registerLocaleData */])(__WEBPACK_IMPORTED_MODULE_6__angular_common_locales_uk__["a" /* default */], 'uk');
+
+Object(__WEBPACK_IMPORTED_MODULE_5__angular_common__["k" /* registerLocaleData */])(__WEBPACK_IMPORTED_MODULE_7__angular_common_locales_uk__["a" /* default */], 'uk');
 
 
 
@@ -185,8 +186,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_27__medcard_indexe_indexe_component__["a" /* IndexeComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["b" /* CollapseModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["a" /* BsDropdownModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["b" /* CollapseModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["a" /* BsDropdownModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["c" /* ModalModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* ReactiveFormsModule */],
@@ -203,6 +205,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_14__record_record_service__["a" /* RecordService */],
                 __WEBPACK_IMPORTED_MODULE_15__medcard_medcard_service__["a" /* MedcardService */],
                 __WEBPACK_IMPORTED_MODULE_16__auth_auth_guard__["a" /* AuthGuard */],
+                __WEBPACK_IMPORTED_MODULE_5__angular_common__["d" /* DatePipe */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */], useValue: 'uk' }
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_17__app_component__["a" /* AppComponent */]],
@@ -458,7 +461,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ConfigService = /** @class */ (function () {
     function ConfigService() {
-        this.url_base = "http://127.0.0.1:5000";
+        this.url_base = "";
     }
     ConfigService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
@@ -474,14 +477,14 @@ var ConfigService = /** @class */ (function () {
 /***/ "./src/app/doctor/doctor.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".card.doctor {\r\n  border: 0 !important;\r\n  margin-bottom: 1rem !important;\r\n}\r\n\r\nh1.card-title {\r\n  font-size: 1.0rem;\r\n  color: #454f5f;\r\n}\r\n\r\nh2.card-subtitle {\r\n  font-size: 0.9rem;\r\n  font-weight: 300;\r\n}\r\n\r\n.btn.btn-record {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.img-doctor {\r\n  max-width: 100px;\r\n  border: 4px double #eaeaeafa;\r\n  border-radius: 0% !important;\r\n}\r\n\r\n.card-footer {\r\n  border-top: 1px solid rgba(0, 0, 0, 0.04);\r\n}\r\n\r\n.list-group-item {\r\n  font-size: 0.8rem;\r\n  font-weight: 400;\r\n  position: relative;\r\n  display: block;\r\n  padding: 5px!important;\r\n  margin-bottom: -1px;\r\n  background-color: #00000000;\r\n  border: 1px solid rgba(0, 0, 0, 0.01);\r\n  color: #06304c8a;\r\n}\r\n"
+module.exports = ".card.doctor {\r\n  border: 0 !important;\r\n  margin-bottom: 1rem !important;\r\n}\r\n\r\nh1.card-title {\r\n  font-size: 1.15rem;\r\n  color: #454f5f;\r\n}\r\n\r\nh2.card-subtitle {\r\n  font-size: 0.9rem;\r\n  font-weight: 300;\r\n}\r\n\r\n.btn.btn-record {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.img-doctor {\r\n  max-width: 100px;\r\n  border: 4px double #eaeaeafa;\r\n  border-radius: 0% !important;\r\n}\r\n\r\n.card-footer {\r\n  border-top: 1px solid rgba(0, 0, 0, 0.04);\r\n}\r\n\r\n.list-group-item {\r\n  font-size: 0.8rem;\r\n  font-weight: 400;\r\n  position: relative;\r\n  display: block;\r\n  padding: 5px!important;\r\n  margin-bottom: -1px;\r\n  background-color: #00000000;\r\n  border: 1px solid rgba(0, 0, 0, 0.01);\r\n  color: #06304c8a;\r\n}\r\n\r\nul.date-list{\r\n  display: -ms-grid;\r\n  display: grid;\r\n  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\r\n      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nul.date-list li{\r\n  list-style-type: none;\r\n  border: 1px solid #007bff;\r\n  border-radius: 2px;\r\n  margin: 2px 2px;\r\n  font-size: 0.8rem;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n\r\nul.date-list li:hover{\r\n  list-style-type: none;\r\n  border: 1px solid #007bff;\r\n  background: #007bff;\r\n  color: white;\r\n  border-radius: 2px;\r\n  margin: 2px 2px;\r\n  font-size: 0.8rem;\r\n  text-align: center;\r\n}\r\n\r\n.sel {\r\n  text-align: center;\r\n  font-size: 0.8rem;\r\n  background: #007bff;\r\n  color: white;\r\n}\r\n"
 
 /***/ }),
 
 /***/ "./src/app/doctor/doctor.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">\n    <div *ngFor=\"let doctor of doctors['doctors']\" class=\"card doctor\">\n      <div class=\"card-body\">\n        <div class=\"row\">\n          <div class=\"col-auto\">\n            <img class=\"img-doctor rounded\"\n                 alt=\"{{doctor['user'].last_name }} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\"\n                 src=\"http://127.0.0.1:5000/{{doctor.user.photo_path}}\">\n          </div>\n          <div class=\"col\">\n            <h1 class=\"card-title\">\n              {{doctor['user'].last_name}} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\n            </h1>\n            <h2 class=\"card-subtitle mb-2 text-muted\">\n              <i class=\"fa fa-user-md\" aria-hidden=\"true\"></i>\n              {{doctor['type_doctor'].label}}\n            </h2>\n            <button type=\"button\" class=\"btn btn-sm btn-link btn-record\">Записатись</button>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer text-center p-0\">\n        <ul class=\"list-group list-group-flush p-0\">\n\n          <li *ngFor=\"let hospital of doctor.hospitals\" class=\"list-group-item\">\n            <i aria-hidden=\"true\" class=\"fa fa-hospital-o\"></i>\n            {{hospital['name']}}\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n\n<hr>\n<footer class=\"container\">\n  <p>© MEDINFO 2018</p>\n</footer>\n"
+module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">\n    <div *ngFor=\"let doctor of doctors['doctors']\" class=\"card doctor\">\n      <div class=\"card-body\">\n        <div class=\"row\">\n          <div class=\"col-auto\">\n            <img class=\"img-doctor rounded\"\n                 alt=\"{{doctor['user'].last_name }} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\"\n                 src=\"http://127.0.0.1:5000/{{doctor.user.photo_path}}\">\n          </div>\n          <div class=\"col\">\n            <h1 class=\"card-title\">\n              {{doctor['user'].last_name}} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\n            </h1>\n            <h2 class=\"card-subtitle mb-2 text-muted\">\n              <i class=\"fa fa-user-md\" aria-hidden=\"true\"></i>\n              {{doctor['type_doctor'].label}}\n            </h2>\n            <button (click)=\"modalRecordAdd(template, doctor['doctor'].id)\" type=\"button\"\n                    class=\"btn btn-sm btn-link btn-record\">Записатись\n            </button>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer text-center p-0\">\n        <ul class=\"list-group list-group-flush p-0\">\n\n          <li *ngFor=\"let hospital of doctor.hospitals\" class=\"list-group-item\">\n            <i aria-hidden=\"true\" class=\"fa fa-hospital-o\"></i>\n            {{hospital['name']}}\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n\n<ng-template #template>\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title pull-left\">Запис на прийом</h4>\n    <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <h6>Виберіть день запису: <span>{{select_date | date: 'dd MMM'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let d_rec of date_records\" (click)=\"onClickDate($event, d_rec)\">\n        {{d_rec | date: 'dd MMM'}}\n        {{d_rec | date: 'EEEE'}}\n      </li>\n    </ul>\n    <h6>Виберіть зручний для вас час: <span>{{select_time | date: 'HH:mm'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let t_rec of time_records\" (click)=\"onClickTime($event, t_rec)\">\n        {{t_rec | date: 'HH:mm'}}\n      </li>\n    </ul>\n    <div *ngIf=\"alertBool\" class=\"alert alert-warning alert-dismissible fade show mt-3\" role=\"alert\">\n      <strong>Виберіть дату і час!</strong> Це обов'язкові поля.\n      <button (click)=\"alertBool = false\" type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"addRecord()\">Записатись на прийом</button>\n  </div>\n</ng-template>\n\n<hr>\n<footer class=\"container\">\n  <p>© MEDINFO 2018</p>\n</footer>\n"
 
 /***/ }),
 
@@ -492,6 +495,9 @@ module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoctorComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__doctor_service__ = __webpack_require__("./src/app/doctor/doctor.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__ = __webpack_require__("./node_modules/ngx-bootstrap/modal/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__record_record_service__ = __webpack_require__("./src/app/record/record.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -503,19 +509,95 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
+
 var DoctorComponent = /** @class */ (function () {
-    function DoctorComponent(hospitalService) {
-        this.hospitalService = hospitalService;
+    function DoctorComponent(doctorService, modalService, recordService, datePipe) {
+        this.doctorService = doctorService;
+        this.modalService = modalService;
+        this.recordService = recordService;
+        this.datePipe = datePipe;
+        /** onClick */
+        this.elem_sel_date = null;
+        this.elem_sel_time = null;
         this.doctors = [];
+        this.date_records = [];
+        this.time_records = [];
+        this.select_date = null;
+        this.select_time = null;
+        this.alertBool = false;
     }
     DoctorComponent.prototype.ngOnInit = function () {
         this.getDoctors();
     };
     DoctorComponent.prototype.getDoctors = function () {
         var _this = this;
-        this.hospitalService
+        this.doctorService
             .get_doctor_all()
             .subscribe(function (res) { return _this.doctors = res; });
+    };
+    DoctorComponent.prototype.modalRecordAdd = function (template, id) {
+        this.doctor_id = id;
+        this.modalRef = this.modalService.show(template);
+        this.generateDates();
+        this.select_date = null;
+        this.select_time = null;
+    };
+    DoctorComponent.prototype.addRecord = function () {
+        var _this = this;
+        if (this.elem_sel_date !== null && this.elem_sel_time !== null) {
+            this.alertBool = false;
+            this.recordService
+                .addRecord(this.doctor_id, this.datePipe.transform(this.select_date, 'dd-MM-yyyy') + ' ' + this.datePipe.transform(this.select_time, 'HH:mm'))
+                .subscribe(function (res) { return _this.recordService.getHttpUserRecords(); });
+        }
+        else {
+            this.alertBool = true;
+        }
+    };
+    DoctorComponent.prototype.generateDates = function () {
+        this.alertBool = false;
+        this.date_records = [];
+        this.time_records = [];
+        this.elem_sel_date = null;
+        this.elem_sel_time = null;
+        var dd = new Date();
+        for (var i = 0; i < 30; i++) {
+            var dt = new Date(dd.setDate(dd.getDate() + 1));
+            if (dt.getDay() != 0)
+                this.date_records.push(dt);
+        }
+        dd.setHours(8);
+        dd.setMinutes(0);
+        for (var i = 0; i < 18; i++) {
+            var dt = new Date(dd.setMinutes(dd.getMinutes() + 30));
+            if (dt.getDay() != 0)
+                this.time_records.push(dt);
+            dd.setMinutes(dd.getMinutes() + 10);
+        }
+    };
+    DoctorComponent.prototype.onClickDate = function ($event, rec) {
+        if (this.elem_sel_date !== null) {
+            this.elem_sel_date.target.className = "";
+        }
+        this.elem_sel_date = $event;
+        this.elem_sel_date.target.className = "sel";
+        this.select_date = rec;
+        if (this.elem_sel_date !== null && this.elem_sel_time !== null) {
+            this.alertBool = false;
+        }
+    };
+    DoctorComponent.prototype.onClickTime = function ($event, rec) {
+        if (this.elem_sel_time !== null) {
+            this.elem_sel_time.target.className = "";
+        }
+        this.elem_sel_time = $event;
+        this.elem_sel_time.target.className = "sel";
+        this.select_time = rec;
+        if (this.elem_sel_date !== null && this.elem_sel_time !== null) {
+            this.alertBool = false;
+        }
     };
     DoctorComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -523,7 +605,10 @@ var DoctorComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/doctor/doctor.component.html"),
             styles: [__webpack_require__("./src/app/doctor/doctor.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__doctor_service__["a" /* DoctorService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__doctor_service__["a" /* DoctorService */],
+            __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__["a" /* BsModalService */],
+            __WEBPACK_IMPORTED_MODULE_3__record_record_service__["a" /* RecordService */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_common__["d" /* DatePipe */]])
     ], DoctorComponent);
     return DoctorComponent;
 }());
@@ -739,7 +824,7 @@ module.exports = ""
 /***/ "./src/app/medcard/indexe/indexe.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card-b card-sticker\">\n  <div class=\"sticker blue-bg\">\n    <div class=\"day\">25</div>\n    <div class=\"mon\">Сер</div>\n  </div>\n  <div class=\"title blue  \">\n    Вага\n  </div>\n  <div class=\"sub-title\">\n    90 КГ\n  </div>\n</div>\n\n<div class=\"card-b card-sticker\">\n  <div class=\"sticker blue-bg\">\n    <div class=\"day\">13</div>\n    <div class=\"mon\">Чер</div>\n  </div>\n  <div class=\"title blue\">\n    Кров'яний тиск\n  </div>\n  <div class=\"sub-title\">\n    120 / 60\n  </div>\n</div>\n"
+module.exports = "<div class=\"card-b-header\">\n  Показники\n</div>\n\n<div class=\"card-b card-sticker\">\n  <div class=\"sticker blue-bg\">\n    <div class=\"day\">25</div>\n    <div class=\"mon\">Сер</div>\n  </div>\n  <div class=\"title blue  \">\n    Вага\n  </div>\n  <div class=\"sub-title\">\n    90 КГ\n  </div>\n</div>\n\n<div class=\"card-b card-sticker\">\n  <div class=\"sticker blue-bg\">\n    <div class=\"day\">13</div>\n    <div class=\"mon\">Чер</div>\n  </div>\n  <div class=\"title blue\">\n    Кров'яний тиск\n  </div>\n  <div class=\"sub-title\">\n    120 / 60\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -905,14 +990,14 @@ var MedcardService = /** @class */ (function () {
 /***/ "./src/app/record/list/list.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".record-header{\r\n  border: 1px solid #dfdfdf;\r\n  border-radius: 3px 3px 0 0;\r\n  border-bottom: 0;\r\n  background: white;\r\n  text-align: center;\r\n  padding: 16px;\r\n  font-weight: 600;\r\n  font-size: 24px;\r\n}\r\n\r\n.list-group-item:first-child {\r\n  border-top-left-radius: 0;\r\n  border-top-right-radius: 0;\r\n}\r\n"
+module.exports = ".record-header{\r\n  border: 1px solid #dfdfdf;\r\n  border-radius: 3px 3px 0 0;\r\n  border-bottom: 0;\r\n  background: white;\r\n  text-align: center;\r\n  padding: 16px;\r\n  font-weight: 600;\r\n  font-size: 24px;\r\n}\r\n\r\n.list-group-item:first-child {\r\n  border-top-left-radius: 0;\r\n  border-top-right-radius: 0;\r\n}\r\n\r\n.btn.btn-del{\r\n  color: #e01111;\r\n}\r\n\r\n.btn.btn-inf {\r\n  color: #54790b;\r\n}\r\n\r\n"
 
 /***/ }),
 
 /***/ "./src/app/record/list/list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"card-b-header\">\n  Записи на прийом\n</div>\n<div *ngFor=\"let record of records\" class=\"card-b card-sticker\">\n  <div class=\"sticker\">\n    <div class=\"day\">{{record.record.date_record | date: 'dd' }}</div>\n    <div class=\"mon\">{{record.record.date_record | date: 'MMM' }}</div>\n  </div>\n  <div class=\"title\">\n    {{record.user.last_name}} {{record.user.first_name}} {{record.user.mid_name}}\n  </div>\n  <div class=\"sub-title\">\n    Хірург\n  </div>\n  <div class=\"sub-title\">\n    {{record.hospital.name}}\n    <small>{{record.hospital.adress}}</small>\n  </div>\n</div>\n"
+module.exports = "<div class=\"card-b-header\">\n  Записи на прийом\n</div>\n<div *ngFor=\"let record of records\" class=\"card-b card-sticker\">\n  <div class=\"sticker\">\n    <div class=\"day\">{{record.record.date_record | date: 'dd MMM' }}</div>\n  </div>\n  <div class=\"title\">\n    {{record.user.last_name}} {{record.user.first_name}} {{record.user.mid_name}}\n  </div>\n  <div class=\"sub-title\">\n    Хірург\n  </div>\n  <div class=\"sub-title\">\n    {{record.hospital.name}}\n    <small>{{record.hospital.adress}}</small>\n  </div>\n  <div class=\"sub-title text-center pt-2\">\n    <button (click)=\"inf(template)\" class=\"btn btn-sm btn-link btn-inf\" type=\"button\">Детальніше</button>\n    <button (click)=\"modal_del(record.record.id, template)\" class=\"btn btn-sm btn-link btn-del\" type=\"button\">Відмінити</button>\n  </div>\n</div>\n\n\n\n<ng-template #template>\n  <div class=\"modal-body text-center\">\n    <p>Ви впевнені що хочете відмінити запис на прийом?</p>\n    <button type=\"button\" class=\"btn btn-default\" (click)=\"del(select_record_id); modalRef.hide()\" >Так</button>\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"modalRef.hide()\" >Ні</button>\n  </div>\n</ng-template>\n"
 
 /***/ }),
 
@@ -923,6 +1008,7 @@ module.exports = "\n<div class=\"card-b-header\">\n  Записи на прий�
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__record_service__ = __webpack_require__("./src/app/record/record.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__ = __webpack_require__("./node_modules/ngx-bootstrap/modal/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -934,17 +1020,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var ListComponent = /** @class */ (function () {
-    function ListComponent(recordService) {
+    function ListComponent(recordService, modalService) {
         this.recordService = recordService;
+        this.modalService = modalService;
     }
     ListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.recordService.records.subscribe(function (res) { return _this.records = res; });
     };
-    ListComponent.prototype.formatData = function (dateStr) {
-        var date = new Date(dateStr);
-        return date.getDay() + " " + date.getMonth() + " " + date.getFullYear();
+    ListComponent.prototype.del = function () {
+        var _this = this;
+        this.recordService
+            .delRecord(this.select_record_id)
+            .subscribe(function (res) { _this.recordService.getHttpUserRecords(); });
+    };
+    ListComponent.prototype.inf = function (id) { };
+    ListComponent.prototype.modal_del = function (id, template) {
+        this.select_record_id = id;
+        this.modalRef = this.modalService.show(template);
     };
     ListComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -952,7 +1047,7 @@ var ListComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/record/list/list.component.html"),
             styles: [__webpack_require__("./src/app/record/list/list.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__record_service__["a" /* RecordService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__record_service__["a" /* RecordService */], __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__["a" /* BsModalService */]])
     ], ListComponent);
     return ListComponent;
 }());
@@ -1015,6 +1110,24 @@ var RecordService = /** @class */ (function () {
     };
     RecordService.prototype.getUserRecords = function () {
         return this.records.asObservable();
+    };
+    RecordService.prototype.delRecord = function (id) {
+        return this.httpClient
+            .post(this.configService.url_base + "/record/del", "record_id=" + id + "&access_token=" + this.authStatus.access_token, {
+            headers: {
+                'content': 'application/json',
+                'content-type': 'application/x-www-form-urlencoded'
+            }
+        });
+    };
+    RecordService.prototype.addRecord = function (doctor_id, date_record) {
+        return this.httpClient
+            .post(this.configService.url_base + "/record/add", "doctor_id=" + doctor_id + "&date_record=" + date_record + "&access_token=" + this.authStatus.access_token, {
+            headers: {
+                'content': 'application/json',
+                'content-type': 'application/x-www-form-urlencoded'
+            }
+        });
     };
     RecordService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
