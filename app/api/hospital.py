@@ -134,3 +134,32 @@ def hospital_all():
     except Exception as ex:
         print(ex)
         return jsonify({'error_code': '3', 'error_msg': 'Error connect to database.'})
+
+
+@app.route('/hospital/getId/<id>')
+def hospital_getId(id):
+    try:
+        hospital_id = int(id)
+    except Exception:
+        return jsonify(
+            {'error_code': '1',
+             'error_msg': 'Value [id] is not valid, value should be a number.'})
+
+    try:
+        query = db.session.query(models.Hospital, models.TypeHospital)\
+            .join(models.TypeHospital) \
+            .filter(models.Hospital.id == id) \
+            .first()
+
+        hospital, type_hospital = query;
+
+        hospital_schema = models.HospitalSchema()
+        hospital_json = hospital_schema.dump(hospital).data
+
+        type_hospital_schema = models.TypeHospitalSchema()
+        type_hospital_json = type_hospital_schema.dump(type_hospital).data
+
+        return jsonify({'hospital': hospital_json, 'type_hospital': type_hospital_json})
+    except Exception as ex:
+        print(ex)
+        return jsonify({'error_code': '3', 'error_msg': 'Error connect to database.'})
