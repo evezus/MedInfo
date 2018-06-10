@@ -110,7 +110,7 @@ def doctor_get_id(id):
             .join(models.User) \
             .join(models.Hospital) \
             .join(models.TypeDoctor) \
-            .filter(models.Doctor.id == id) \
+            .filter(models.User.id == id) \
             .first()
     except Exception:
         return jsonify({'error_code': '2', 'error_msg': 'Doctor does not exist.'})
