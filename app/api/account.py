@@ -189,8 +189,7 @@ def account_set_photo():
                 id = auxiliary_metods.id_generator()
                 filename = file.filename.split('.')[1]
                 pub_name = os.path.join('assets', 'photo',  id + '.' + filename);
-                filename = os.path.join('dist', pub_name)
-                file.save(filename)
+                file.save(os.path.join('dist', 'assets', 'photo', id + '.' + filename))
 
                 try:
                     if user.photo_path.find('user.jpg') == -1:
@@ -207,7 +206,7 @@ def account_set_photo():
                     db.session.rollback()
                     return jsonify({'error_code': '3', 'error_msg': 'Error connect to database.'})
 
-                return jsonify({'photo': filename})
+                return jsonify({'photo': pub_name})
             else:
                 return jsonify({'error_code': '3', 'error_msg': 'Error file type.'})
         except Exception as ex:

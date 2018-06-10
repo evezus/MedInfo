@@ -67,7 +67,7 @@ def medcard_info_set():
 
         try:
             params['blood_type'] = request.form['blood_type']
-            if not validate.blood_type(params['blood_type']):
+            if not validate.blood_type(str(params['blood_type']).replace(' ')):
                 return jsonify(
                     {'error_code': '3', 'error_msg': 'Value [blood_type] is not valid.'})
         except:

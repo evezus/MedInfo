@@ -20,14 +20,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".footer {\r\n  border-top: 1px solid silver;\r\n  width: 100%;\r\n  height: 60px;\r\n  line-height: 60px;\r\n}\r\n"
 
 /***/ }),
 
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">\r\n    <div class=\"container\">\r\n      <a class=\"navbar-brand\" [routerLink]=\"['/']\">\r\n        <img\r\n          src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDkzMC44NTUgOTMwLjg1NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTMwLjg1NSA5MzAuODU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTY4My45NTMsNTAuMjc4Yy05NC4yLDAtMTc2LjIsNTIuMy0yMTguNSwxMjkuNGMtNDIuNC03Ny4xLTEyNC4zLTEyOS40LTIxOC41LTEyOS40Yy05MC4yLDAtMTcyLjEsNTIuOC0yMTUuMywxMzEgICAgYy01MS40LDkyLjktMzMuOCwxOTUuMyw3LjMsMjg4LjVjMC4xLDAuMTk5LDAuMiwwLjQsMC4zLDAuNmgyMDQuMWw0Ni44LTg0LjI5OWM5LjUtMTcuMTAxLDM0LjE5OS0xNy4yLDQzLjY5OS0wLjEwMWw4NS45LDE1My42MDEgICAgbDEzMi45MDEtMjc5LjcwMWM5LjUtMjAuMSwzOC42LTE4LjcsNDYuMSwyLjJsNzUuNiwyMDguMmgyMTcuMmMwLjEwMS0wLjE5OSwwLjItMC40LDAuMy0wLjZjNDEuMi05My4yMDEsNTguNy0xOTUuNjAxLDcuNC0yODguNSAgICBDODU2LjA1MywxMDMuMDc4LDc3NC4wNTMsNTAuMjc4LDY4My45NTMsNTAuMjc4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik02MTUuNDUzLDUyOS4yNzhsLTQ2LjQtMTI4bC0xMjMsMjU4LjkwMWMtOC43LDE4LjQtMzQuNSwxOS4xOTktNDQuNSwxLjVsLTg5LjM5OS0xNTkuOWwtMTcuMzAxLDMxLjEgICAgYy00LjM5OSw3LjktMTIuOCwxMi45LTIxLjg5OSwxMi45aC0xODguNmMxMDMuNCwxNDEuNjk5LDMwNC4xLDI4Ny42LDM2My45LDMyOS40YzEwLjMsNy4xOTksMjQuMSw3LjE5OSwzNC40MDEsMCAgICBjNTkuOC00MS45LDI2MC41LTE4Ny44MDEsMzYzLjg5OS0zMjkuNGgtMjA3LjVDNjI4LjQ1Myw1NDUuNzc4LDYxOS4wNTMsNTM5LjE3OCw2MTUuNDUzLDUyOS4yNzh6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\"\r\n        />\r\n        <b>MEDINFO</b>\r\n      </a>\r\n\r\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" (click)=\"isCollapsed = !isCollapsed\"\r\n              aria-controls=\"navbarContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n\r\n      <div class=\"navbar-collapse\" id=\"navbarContent\" [collapse]=isCollapsed>\r\n\r\n        <ul class=\"navbar-nav mr-auto\">\r\n          <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n            <a class=\"nav-link\" [routerLink]=\"['/doctor']\">Лікарі</a>\r\n          </li>\r\n          <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n            <a class=\"nav-link\" [routerLink]=\"['/hospital']\">Клініки</a>\r\n          </li>\r\n          <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n            <a class=\"nav-link\" [routerLink]=\"['/components']\">Послуги</a>\r\n          </li>\r\n\r\n        </ul>\r\n\r\n        <span class=\"form-inline\">\r\n\r\n          <ul *ngIf=\"!authStatus.status\" class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n              <a class=\"nav-link\" [routerLink]=\"['/auth']\" (click)=\"navbarCollapsed = true\">Авторизація</a>\r\n            </li>\r\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n              <a class=\"nav-link\" [routerLink]=\"['/register']\">Реєстрація</a>\r\n            </li>\r\n          </ul>\r\n\r\n          <ul *ngIf=\"authStatus.status\" class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item dropdown\" dropdown>\r\n              <a dropdownToggle class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\"\r\n                 aria-haspopup=\"true\"\r\n                 aria-expanded=\"false\" [routerLinkActive]=\"['active']\">{{userName}}</a>\r\n              <ul *dropdownMenu class=\"dropdown-menu\" role=\"menu\">\r\n                <li role=\"menuitem\"><a [routerLink]=\"['/user']\" class=\"dropdown-item\">Медична карта</a></li>\r\n                <li role=\"menuitem\"><a class=\"dropdown-item\">Записи на прийом</a></li>\r\n                <li role=\"menuitem\"><a class=\"dropdown-item\">Налаштування</a></li>\r\n                <li class=\"divider dropdown-divider\"></li>\r\n                <li role=\"menuitem\"><a (click)=\"onExit()\" class=\"dropdown-item\">Вийти</a>\r\n                </li>\r\n              </ul>\r\n            </li>\r\n          </ul>\r\n\r\n        </span>\r\n\r\n      </div>\r\n    </div>\r\n  </nav>\r\n</header>\r\n<router-outlet></router-outlet>\r\n"
+module.exports = "<header>\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">\r\n    <div class=\"container\">\r\n      <a class=\"navbar-brand\" [routerLink]=\"['/']\">\r\n        <img\r\n          src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDkzMC44NTUgOTMwLjg1NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTMwLjg1NSA5MzAuODU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTY4My45NTMsNTAuMjc4Yy05NC4yLDAtMTc2LjIsNTIuMy0yMTguNSwxMjkuNGMtNDIuNC03Ny4xLTEyNC4zLTEyOS40LTIxOC41LTEyOS40Yy05MC4yLDAtMTcyLjEsNTIuOC0yMTUuMywxMzEgICAgYy01MS40LDkyLjktMzMuOCwxOTUuMyw3LjMsMjg4LjVjMC4xLDAuMTk5LDAuMiwwLjQsMC4zLDAuNmgyMDQuMWw0Ni44LTg0LjI5OWM5LjUtMTcuMTAxLDM0LjE5OS0xNy4yLDQzLjY5OS0wLjEwMWw4NS45LDE1My42MDEgICAgbDEzMi45MDEtMjc5LjcwMWM5LjUtMjAuMSwzOC42LTE4LjcsNDYuMSwyLjJsNzUuNiwyMDguMmgyMTcuMmMwLjEwMS0wLjE5OSwwLjItMC40LDAuMy0wLjZjNDEuMi05My4yMDEsNTguNy0xOTUuNjAxLDcuNC0yODguNSAgICBDODU2LjA1MywxMDMuMDc4LDc3NC4wNTMsNTAuMjc4LDY4My45NTMsNTAuMjc4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik02MTUuNDUzLDUyOS4yNzhsLTQ2LjQtMTI4bC0xMjMsMjU4LjkwMWMtOC43LDE4LjQtMzQuNSwxOS4xOTktNDQuNSwxLjVsLTg5LjM5OS0xNTkuOWwtMTcuMzAxLDMxLjEgICAgYy00LjM5OSw3LjktMTIuOCwxMi45LTIxLjg5OSwxMi45aC0xODguNmMxMDMuNCwxNDEuNjk5LDMwNC4xLDI4Ny42LDM2My45LDMyOS40YzEwLjMsNy4xOTksMjQuMSw3LjE5OSwzNC40MDEsMCAgICBjNTkuOC00MS45LDI2MC41LTE4Ny44MDEsMzYzLjg5OS0zMjkuNGgtMjA3LjVDNjI4LjQ1Myw1NDUuNzc4LDYxOS4wNTMsNTM5LjE3OCw2MTUuNDUzLDUyOS4yNzh6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\"\r\n        />\r\n        <b>MEDINFO</b>\r\n      </a>\r\n\r\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" (click)=\"isCollapsed = !isCollapsed\"\r\n              aria-controls=\"navbarContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n\r\n      <div class=\"navbar-collapse\" id=\"navbarContent\" [collapse]=isCollapsed>\r\n\r\n        <ul class=\"navbar-nav mr-auto\">\r\n          <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n            <a class=\"nav-link\" [routerLink]=\"['/doctor']\">Лікарі</a>\r\n          </li>\r\n          <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n            <a class=\"nav-link\" [routerLink]=\"['/hospital']\">Клініки</a>\r\n          </li>\r\n\r\n        </ul>\r\n\r\n        <span class=\"form-inline\">\r\n\r\n          <ul *ngIf=\"!authStatus.status\" class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n              <a class=\"nav-link\" [routerLink]=\"['/auth']\" (click)=\"navbarCollapsed = true\">Авторизація</a>\r\n            </li>\r\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\r\n              <a class=\"nav-link\" [routerLink]=\"['/register']\">Реєстрація</a>\r\n            </li>\r\n          </ul>\r\n\r\n          <ul *ngIf=\"authStatus.status\" class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item dropdown\" dropdown>\r\n              <a dropdownToggle class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\"\r\n                 aria-haspopup=\"true\"\r\n                 aria-expanded=\"false\" [routerLinkActive]=\"['active']\">{{userName}}</a>\r\n              <ul *dropdownMenu class=\"dropdown-menu\" role=\"menu\">\r\n                <li role=\"menuitem\"><a [routerLink]=\"['/user']\" class=\"dropdown-item\">Медична карта</a></li>\r\n                <li role=\"menuitem\"><a [routerLink]=\"['/user/records']\" class=\"dropdown-item\">Записи на прийом</a></li>\r\n                <li role=\"menuitem\"><a [routerLink]=\"['/user/setting']\" class=\"dropdown-item\">Налаштування</a></li>\r\n                <li class=\"divider dropdown-divider\"></li>\r\n                <li role=\"menuitem\"><a (click)=\"onExit()\" class=\"dropdown-item\">Вийти</a>\r\n                </li>\r\n              </ul>\r\n            </li>\r\n          </ul>\r\n\r\n        </span>\r\n\r\n      </div>\r\n    </div>\r\n  </nav>\r\n</header>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<footer class=\"footer\">\r\n  <div class=\"container\">\r\n    <span class=\"text-muted\">MEDINFO</span>\r\n  </div>\r\n</footer>\r\n"
 
 /***/ }),
 
@@ -80,7 +80,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/app.component.html"),
             styles: [__webpack_require__("./src/app/app.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__user_user_service__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__user_user_service__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -102,26 +102,36 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__ = __webpack_require__("./node_modules/ngx-bootstrap/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_locales_uk__ = __webpack_require__("./node_modules/@angular/common/locales/uk.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_service__ = __webpack_require__("./src/app/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hospital_hospital_service__ = __webpack_require__("./src/app/hospital/hospital.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor_service__ = __webpack_require__("./src/app/doctor/doctor.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__register_register_service__ = __webpack_require__("./src/app/register/register.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__auth_auth_service__ = __webpack_require__("./src/app/auth/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__user_user_service__ = __webpack_require__("./src/app/user/user.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__record_record_service__ = __webpack_require__("./src/app/record/record.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__medcard_medcard_service__ = __webpack_require__("./src/app/medcard/medcard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__auth_auth_guard__ = __webpack_require__("./src/app/auth/auth.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__register_register_component__ = __webpack_require__("./src/app/register/register.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__doctor_doctor_component__ = __webpack_require__("./src/app/doctor/doctor.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__hospital_hospital_component__ = __webpack_require__("./src/app/hospital/hospital.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__user_user_component__ = __webpack_require__("./src/app/user/user.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__user_card_card_component__ = __webpack_require__("./src/app/user/card/card.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__medcard_info_info_component__ = __webpack_require__("./src/app/medcard/info/info.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__record_list_list_component__ = __webpack_require__("./src/app/record/list/list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__medcard_complaints_complaints_component__ = __webpack_require__("./src/app/medcard/complaints/complaints.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__medcard_indexe_indexe_component__ = __webpack_require__("./src/app/medcard/indexe/indexe.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__agm_core__ = __webpack_require__("./node_modules/@agm/core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_service__ = __webpack_require__("./src/app/config.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__hospital_hospital_service__ = __webpack_require__("./src/app/hospital/hospital.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__doctor_doctor_service__ = __webpack_require__("./src/app/doctor/doctor.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__register_register_service__ = __webpack_require__("./src/app/register/register.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__auth_auth_service__ = __webpack_require__("./src/app/auth/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__user_user_service__ = __webpack_require__("./src/app/user/user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__record_record_service__ = __webpack_require__("./src/app/record/record.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__medcard_medcard_service__ = __webpack_require__("./src/app/medcard/medcard.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__auth_auth_guard__ = __webpack_require__("./src/app/auth/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__auth_auth_component__ = __webpack_require__("./src/app/auth/auth.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__register_register_component__ = __webpack_require__("./src/app/register/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__doctor_doctor_component__ = __webpack_require__("./src/app/doctor/doctor.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__hospital_hospital_component__ = __webpack_require__("./src/app/hospital/hospital.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__user_user_component__ = __webpack_require__("./src/app/user/user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__user_card_card_component__ = __webpack_require__("./src/app/user/card/card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__medcard_info_info_component__ = __webpack_require__("./src/app/medcard/info/info.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__record_list_list_component__ = __webpack_require__("./src/app/record/list/list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__medcard_complaints_complaints_component__ = __webpack_require__("./src/app/medcard/complaints/complaints.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__medcard_indexe_indexe_component__ = __webpack_require__("./src/app/medcard/indexe/indexe.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__hospital_page_hospital_page_component__ = __webpack_require__("./src/app/hospital-page/hospital-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__doctor_page_doctor_page_component__ = __webpack_require__("./src/app/doctor-page/doctor-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__user_page_setting_user_page_setting_component__ = __webpack_require__("./src/app/user-page-setting/user-page-setting.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__user_page_records_user_page_records_component__ = __webpack_require__("./src/app/user-page-records/user-page-records.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__doctor_user_filter_pipe__ = __webpack_require__("./src/app/doctor/user-filter.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__doctor_docror_filter_pipe__ = __webpack_require__("./src/app/doctor/docror-filter.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__doctor_doctor_gender_filter_pipe__ = __webpack_require__("./src/app/doctor/doctor-gender-filter.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__doctor_doctor_hospital_name_filter_pipe__ = __webpack_require__("./src/app/doctor/doctor-hospital-name-filter.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__hospital_hospital_name_filter_pipe__ = __webpack_require__("./src/app/hospital/hospital-name-filter.pipe.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -158,12 +168,26 @@ Object(__WEBPACK_IMPORTED_MODULE_5__angular_common__["k" /* registerLocaleData *
 
 
 
+
+
+
+
+
+
+
+
+
+
 var appRoutes = [
-    { path: 'auth', component: __WEBPACK_IMPORTED_MODULE_18__auth_auth_component__["a" /* AuthComponent */] },
-    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_19__register_register_component__["a" /* RegisterComponent */] },
-    { path: 'doctor', component: __WEBPACK_IMPORTED_MODULE_20__doctor_doctor_component__["a" /* DoctorComponent */] },
-    { path: 'hospital', component: __WEBPACK_IMPORTED_MODULE_21__hospital_hospital_component__["a" /* HospitalComponent */] },
-    { path: 'user', component: __WEBPACK_IMPORTED_MODULE_22__user_user_component__["a" /* UserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_16__auth_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'auth', component: __WEBPACK_IMPORTED_MODULE_19__auth_auth_component__["a" /* AuthComponent */] },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_20__register_register_component__["a" /* RegisterComponent */] },
+    { path: 'doctor', component: __WEBPACK_IMPORTED_MODULE_21__doctor_doctor_component__["a" /* DoctorComponent */] },
+    { path: 'doctor/:id', component: __WEBPACK_IMPORTED_MODULE_30__doctor_page_doctor_page_component__["a" /* DoctorPageComponent */] },
+    { path: 'hospital', component: __WEBPACK_IMPORTED_MODULE_22__hospital_hospital_component__["a" /* HospitalComponent */] },
+    { path: 'hospital/:id', component: __WEBPACK_IMPORTED_MODULE_29__hospital_page_hospital_page_component__["a" /* HospitalPageComponent */] },
+    { path: 'user', component: __WEBPACK_IMPORTED_MODULE_23__user_user_component__["a" /* UserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_17__auth_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'user/setting', component: __WEBPACK_IMPORTED_MODULE_31__user_page_setting_user_page_setting_component__["a" /* UserPageSettingComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_17__auth_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'user/records', component: __WEBPACK_IMPORTED_MODULE_32__user_page_records_user_page_records_component__["a" /* UserPageRecordsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_17__auth_auth_guard__["a" /* AuthGuard */]] },
     { path: '', redirectTo: '/register', pathMatch: 'full' },
     { path: '**', redirectTo: '/auth' }
 ];
@@ -173,48 +197,61 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_17__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__auth_auth_component__["a" /* AuthComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__register_register_component__["a" /* RegisterComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__doctor_doctor_component__["a" /* DoctorComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__hospital_hospital_component__["a" /* HospitalComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__user_user_component__["a" /* UserComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__user_card_card_component__["a" /* CardComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__medcard_info_info_component__["a" /* InfoComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__record_list_list_component__["a" /* ListComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__medcard_complaints_complaints_component__["a" /* ComplaintsComponent */],
-                __WEBPACK_IMPORTED_MODULE_27__medcard_indexe_indexe_component__["a" /* IndexeComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__auth_auth_component__["a" /* AuthComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__register_register_component__["a" /* RegisterComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__doctor_doctor_component__["a" /* DoctorComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__hospital_hospital_component__["a" /* HospitalComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__user_user_component__["a" /* UserComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__user_card_card_component__["a" /* CardComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__medcard_info_info_component__["a" /* InfoComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__record_list_list_component__["a" /* ListComponent */],
+                __WEBPACK_IMPORTED_MODULE_27__medcard_complaints_complaints_component__["a" /* ComplaintsComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__medcard_indexe_indexe_component__["a" /* IndexeComponent */],
+                __WEBPACK_IMPORTED_MODULE_29__hospital_page_hospital_page_component__["a" /* HospitalPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_30__doctor_page_doctor_page_component__["a" /* DoctorPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_31__user_page_setting_user_page_setting_component__["a" /* UserPageSettingComponent */],
+                __WEBPACK_IMPORTED_MODULE_32__user_page_records_user_page_records_component__["a" /* UserPageRecordsComponent */],
+                __WEBPACK_IMPORTED_MODULE_33__doctor_user_filter_pipe__["a" /* UserFilterPipe */],
+                __WEBPACK_IMPORTED_MODULE_34__doctor_docror_filter_pipe__["a" /* DocrorFilterPipe */],
+                __WEBPACK_IMPORTED_MODULE_35__doctor_doctor_gender_filter_pipe__["a" /* DoctorGenderFilterPipe */],
+                __WEBPACK_IMPORTED_MODULE_36__doctor_doctor_hospital_name_filter_pipe__["a" /* DoctorHospitalNameFilterPipe */],
+                __WEBPACK_IMPORTED_MODULE_37__hospital_hospital_name_filter_pipe__["a" /* HospitalNameFilterPipe */],
             ],
             imports: [
+                __WEBPACK_IMPORTED_MODULE_8__agm_core__["a" /* AgmCoreModule */].forRoot({
+                    apiKey: 'AIzaSyCxjZvF5tB0ZTx_5IIBf2j_90DV_CnHOvI'
+                }),
+                __WEBPACK_IMPORTED_MODULE_4__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["b" /* CollapseModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["a" /* BsDropdownModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["c" /* ModalModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
+                __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
                 ),
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_8__config_service__["a" /* ConfigService */],
-                __WEBPACK_IMPORTED_MODULE_9__hospital_hospital_service__["a" /* HospitalService */],
-                __WEBPACK_IMPORTED_MODULE_10__doctor_doctor_service__["a" /* DoctorService */],
-                __WEBPACK_IMPORTED_MODULE_11__register_register_service__["a" /* RegisterService */],
-                __WEBPACK_IMPORTED_MODULE_12__auth_auth_service__["a" /* AuthService */],
-                __WEBPACK_IMPORTED_MODULE_13__user_user_service__["a" /* UserService */],
-                __WEBPACK_IMPORTED_MODULE_14__record_record_service__["a" /* RecordService */],
-                __WEBPACK_IMPORTED_MODULE_15__medcard_medcard_service__["a" /* MedcardService */],
-                __WEBPACK_IMPORTED_MODULE_16__auth_auth_guard__["a" /* AuthGuard */],
+                __WEBPACK_IMPORTED_MODULE_9__config_service__["a" /* ConfigService */],
+                __WEBPACK_IMPORTED_MODULE_10__hospital_hospital_service__["a" /* HospitalService */],
+                __WEBPACK_IMPORTED_MODULE_11__doctor_doctor_service__["a" /* DoctorService */],
+                __WEBPACK_IMPORTED_MODULE_12__register_register_service__["a" /* RegisterService */],
+                __WEBPACK_IMPORTED_MODULE_13__auth_auth_service__["a" /* AuthService */],
+                __WEBPACK_IMPORTED_MODULE_14__user_user_service__["a" /* UserService */],
+                __WEBPACK_IMPORTED_MODULE_15__record_record_service__["a" /* RecordService */],
+                __WEBPACK_IMPORTED_MODULE_16__medcard_medcard_service__["a" /* MedcardService */],
+                __WEBPACK_IMPORTED_MODULE_17__auth_auth_guard__["a" /* AuthGuard */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_common__["d" /* DatePipe */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* LOCALE_ID */], useValue: 'uk' }
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_17__app_component__["a" /* AppComponent */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_18__app_component__["a" /* AppComponent */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_23__user_card_card_component__["a" /* CardComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__medcard_info_info_component__["a" /* InfoComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__record_list_list_component__["a" /* ListComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__medcard_complaints_complaints_component__["a" /* ComplaintsComponent */],
-                __WEBPACK_IMPORTED_MODULE_27__medcard_indexe_indexe_component__["a" /* IndexeComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__user_card_card_component__["a" /* CardComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__medcard_info_info_component__["a" /* InfoComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__record_list_list_component__["a" /* ListComponent */],
+                __WEBPACK_IMPORTED_MODULE_27__medcard_complaints_complaints_component__["a" /* ComplaintsComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__medcard_indexe_indexe_component__["a" /* IndexeComponent */],
             ],
         })
     ], AppModule);
@@ -305,7 +342,7 @@ var AuthComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
             __WEBPACK_IMPORTED_MODULE_2__auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]])
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]])
     ], AuthComponent);
     return AuthComponent;
 }());
@@ -411,7 +448,7 @@ var AuthService = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
             __WEBPACK_IMPORTED_MODULE_2__config_service__["a" /* ConfigService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]])
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]])
     ], AuthService);
     return AuthService;
 }());
@@ -475,17 +512,215 @@ var ConfigService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/doctor-page/doctor-page.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "agm-map {\r\n  height: 80%;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/doctor-page/doctor-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container mt-4\">\n  <div class=\"row\" *ngIf=\"doctor !== []\">\n    <div class=\"col-md-3\">\n      <div class=\"card-b\">\n        <div class=\"user-photo\">\n          <img src=\"{{url_base}}/{{doctor?.user?.photo_path}}\" alt=\"\">\n        </div>\n        <div class=\"user-info\">\n          <div class=\"user-name\">\n            {{doctor?.user?.last_name}} {{doctor?.user?.first_name}}\n          </div>\n          <div class=\"user-address\">\n            <i class=\"fa fa-envelope-square\" aria-hidden=\"true\"></i>\n            {{doctor?.type_doctor?.label}}\n          </div>\n        </div>\n      </div>\n\n    </div>\n    <div class=\"col-md-6\">\n      {{doctor?.hospital?.adress}}\n      <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"17\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\n      </agm-map>\n    </div>\n    <div class=\"col-md-3\"></div>\n  </div>\n</div>\n<!--\n{ \"doctor\": { \"id\": 2 }, \"hospital\": { \"adress\": \"Вулиця В'Ячеслава Чорновола, 59А, Івано-Франківськ\", \"id\": 1,\n\"img_logo\": null, \"img_panorama\": null, \"img_small\": null, \"location\": \"49.9679588,21.1777813\",\n\"name\": \"Івано-Франківська Міська Поліклініка №1\", \"obeys\": 0, \"phone\": \"+380971151567\", \"propert\": \"state\",\n\"type_hospital_id\": 1, \"worktime\": \"08:00-18:00\" }, \"type_doctor\": { \"description\": \"певпев\", \"id\": 1, \"label\": \"Хірург\" },\n \"user\": { \"first_name\": \"Тарас\", \"id\": 1, \"last_name\": \"Савчук\", \"mid_name\": \"Іванович\", \"photo_path\": \"assets\\\\photo\\\\75fc657701232799cefd5cf2ccaf3473233be73349a60e0b0090a5e75e364274.png\", \"sex\": \"male\" } }\n-->\n"
+
+/***/ }),
+
+/***/ "./src/app/doctor-page/doctor-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoctorPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__doctor_doctor_service__ = __webpack_require__("./src/app/doctor/doctor.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_service__ = __webpack_require__("./src/app/config.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var DoctorPageComponent = /** @class */ (function () {
+    function DoctorPageComponent(route, doctorService, configService) {
+        this.route = route;
+        this.doctorService = doctorService;
+        this.configService = configService;
+        this.title = 'My first AGM project';
+        this.lat = 49.4350292;
+        this.lng = 26.955197;
+        this.doctor = [];
+        this.url_base = this.configService.url_base;
+    }
+    DoctorPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.getDoctorId(params.id);
+        });
+    };
+    DoctorPageComponent.prototype.getDoctorId = function (id) {
+        var _this = this;
+        this.doctorService.getDoctorId(id)
+            .subscribe(function (res) {
+            _this.doctor = res;
+            //this.lat = Number(this.doctor.hospital.location.split(',')[1]);
+            //this.lng = Number(this.doctor.hospital.location.split(',')[0]);
+        });
+    };
+    DoctorPageComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-doctor-page',
+            template: __webpack_require__("./src/app/doctor-page/doctor-page.component.html"),
+            styles: [__webpack_require__("./src/app/doctor-page/doctor-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_1__doctor_doctor_service__["a" /* DoctorService */],
+            __WEBPACK_IMPORTED_MODULE_3__config_service__["a" /* ConfigService */]])
+    ], DoctorPageComponent);
+    return DoctorPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/doctor/docror-filter.pipe.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocrorFilterPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var DocrorFilterPipe = /** @class */ (function () {
+    function DocrorFilterPipe() {
+    }
+    DocrorFilterPipe.prototype.transform = function (items, searchText) {
+        if (!items)
+            return [];
+        if (!searchText)
+            return items;
+        searchText = searchText.toLowerCase();
+        return items.filter(function (it) {
+            return (it.user.last_name + ' ' + it.user.first_name + ' ' + it.user.mid_name).toLowerCase().includes(searchText);
+        });
+    };
+    DocrorFilterPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Pipe */])({
+            name: 'docrorFilter'
+        })
+    ], DocrorFilterPipe);
+    return DocrorFilterPipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/doctor/doctor-gender-filter.pipe.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoctorGenderFilterPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var DoctorGenderFilterPipe = /** @class */ (function () {
+    function DoctorGenderFilterPipe() {
+    }
+    DoctorGenderFilterPipe.prototype.transform = function (items, searchText) {
+        if (!items)
+            return [];
+        if (!searchText)
+            return items;
+        searchText = searchText.toLowerCase();
+        return items.filter(function (it) {
+            return (it.user.sex).toLowerCase().includes(searchText);
+        });
+    };
+    DoctorGenderFilterPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Pipe */])({
+            name: 'doctorGenderFilter'
+        })
+    ], DoctorGenderFilterPipe);
+    return DoctorGenderFilterPipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/doctor/doctor-hospital-name-filter.pipe.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoctorHospitalNameFilterPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var DoctorHospitalNameFilterPipe = /** @class */ (function () {
+    function DoctorHospitalNameFilterPipe() {
+    }
+    DoctorHospitalNameFilterPipe.prototype.transform = function (items, searchText) {
+        if (!items)
+            return [];
+        if (!searchText)
+            return items;
+        searchText = searchText.toLowerCase();
+        return items.filter(function (it) {
+            for (var i = 0; i < it['hospitals'].length; i++) {
+                if (it['hospitals'][i].name.toLowerCase().indexOf(searchText) > -1) {
+                    return true;
+                }
+            }
+            return false;
+        });
+    };
+    DoctorHospitalNameFilterPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Pipe */])({
+            name: 'doctorHospitalNameFilter'
+        })
+    ], DoctorHospitalNameFilterPipe);
+    return DoctorHospitalNameFilterPipe;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/doctor/doctor.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".card.doctor {\r\n  border: 0 !important;\r\n  margin-bottom: 1rem !important;\r\n}\r\n\r\nh1.card-title {\r\n  font-size: 1.15rem;\r\n  color: #454f5f;\r\n}\r\n\r\nh2.card-subtitle {\r\n  font-size: 0.9rem;\r\n  font-weight: 300;\r\n}\r\n\r\n.btn.btn-record {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.img-doctor {\r\n  max-width: 100px;\r\n  border: 4px double #eaeaeafa;\r\n  border-radius: 0% !important;\r\n}\r\n\r\n.card-footer {\r\n  border-top: 1px solid rgba(0, 0, 0, 0.04);\r\n}\r\n\r\n.list-group-item {\r\n  font-size: 0.8rem;\r\n  font-weight: 400;\r\n  position: relative;\r\n  display: block;\r\n  padding: 5px!important;\r\n  margin-bottom: -1px;\r\n  background-color: #00000000;\r\n  border: 1px solid rgba(0, 0, 0, 0.01);\r\n  color: #06304c8a;\r\n}\r\n\r\nul.date-list{\r\n  display: -ms-grid;\r\n  display: grid;\r\n  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\r\n      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nul.date-list li{\r\n  list-style-type: none;\r\n  border: 1px solid #007bff;\r\n  border-radius: 2px;\r\n  margin: 2px 2px;\r\n  font-size: 0.8rem;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n\r\nul.date-list li:hover{\r\n  list-style-type: none;\r\n  border: 1px solid #007bff;\r\n  background: #007bff;\r\n  color: white;\r\n  border-radius: 2px;\r\n  margin: 2px 2px;\r\n  font-size: 0.8rem;\r\n  text-align: center;\r\n}\r\n\r\n.sel {\r\n  text-align: center;\r\n  font-size: 0.8rem;\r\n  background: #007bff;\r\n  color: white;\r\n}\r\n"
+module.exports = ".card.doctor {\r\n  border: 0 !important;\r\n  margin-bottom: 1rem !important;\r\n}\r\n\r\n\r\n.card.doctor:hover{\r\n  -webkit-box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);\r\n          box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n\r\nh1.card-title {\r\n  font-size: 1.15rem;\r\n  color: #454f5f;\r\n  cursor: pointer;\r\n}\r\n\r\n\r\nh1.card-title:hover{\r\n  color: #0057b3;\r\n  text-decoration: underline;\r\n}\r\n\r\n\r\nh2.card-subtitle {\r\n  font-size: 0.9rem;\r\n  font-weight: 300;\r\n}\r\n\r\n\r\n.btn.btn-record {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n\r\n.img-doctor {\r\n  max-width: 100px;\r\n  border: 4px double #eaeaeafa;\r\n  border-radius: 0% !important;\r\n}\r\n\r\n\r\n.card-footer {\r\n  border-top: 1px solid rgba(0, 0, 0, 0.04);\r\n}\r\n\r\n\r\n.list-group-item {\r\n  font-size: 0.8rem;\r\n  font-weight: 400;\r\n  position: relative;\r\n  display: block;\r\n  padding: 5px!important;\r\n  margin-bottom: -1px;\r\n  background-color: #00000000;\r\n  border: 1px solid rgba(0, 0, 0, 0.01);\r\n  color: #06304c8a;\r\n  cursor: pointer;\r\n}\r\n\r\n\r\n.list-group-item:hover {\r\n  background-color: #00000008;\r\n  color: #0057b3;\r\n  text-decoration: underline;\r\n}\r\n\r\n\r\n/* Date list */\r\n\r\n\r\nul.date-list{\r\n  display: -ms-grid;\r\n  display: grid;\r\n  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\r\n      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n\r\nul.date-list li{\r\n  list-style-type: none;\r\n  border: 1px solid #007bff;\r\n  border-radius: 2px;\r\n  margin: 2px 2px;\r\n  font-size: 0.8rem;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n\r\n\r\nul.date-list li:hover{\r\n  list-style-type: none;\r\n  border: 1px solid #007bff;\r\n  background: #007bff;\r\n  color: white;\r\n  border-radius: 2px;\r\n  margin: 2px 2px;\r\n  font-size: 0.8rem;\r\n  text-align: center;\r\n}\r\n\r\n\r\n.sel {\r\n  text-align: center;\r\n  font-size: 0.8rem;\r\n  background: #007bff;\r\n  color: white;\r\n}\r\n\r\n\r\n.search-box{\r\n  border-radius: 5px;\r\n  padding: 15px 15px 0px 15px;\r\n  background: white;\r\n  -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);\r\n          box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n"
 
 /***/ }),
 
 /***/ "./src/app/doctor/doctor.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">\n    <div *ngFor=\"let doctor of doctors['doctors']\" class=\"card doctor\">\n      <div class=\"card-body\">\n        <div class=\"row\">\n          <div class=\"col-auto\">\n            <img class=\"img-doctor rounded\"\n                 alt=\"{{doctor['user'].last_name }} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\"\n                 src=\"{{url_base}}/{{doctor.user.photo_path}}\">\n          </div>\n          <div class=\"col\">\n            <h1 class=\"card-title\">\n              {{doctor['user'].last_name}} {{doctor['user'].first_name}} {{doctor['user'].mid_name}}\n            </h1>\n            <h2 class=\"card-subtitle mb-2 text-muted\">\n              <i class=\"fa fa-user-md\" aria-hidden=\"true\"></i>\n              {{doctor['type_doctor'].label}}\n            </h2>\n            <button (click)=\"modalRecordAdd(template, doctor['doctor'].id)\" type=\"button\"\n                    class=\"btn btn-sm btn-link btn-record\">Записатись\n            </button>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer text-center p-0\">\n        <ul class=\"list-group list-group-flush p-0\">\n\n          <li *ngFor=\"let hospital of doctor.hospitals\" class=\"list-group-item\">\n            <i aria-hidden=\"true\" class=\"fa fa-hospital-o\"></i>\n            {{hospital['name']}}\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n\n<ng-template #template>\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title pull-left\">Запис на прийом</h4>\n    <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <h6>Виберіть день запису: <span>{{select_date | date: 'dd MMM'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let d_rec of date_records\" (click)=\"onClickDate($event, d_rec)\">\n        {{d_rec | date: 'dd MMM'}}\n        {{d_rec | date: 'EEEE'}}\n      </li>\n    </ul>\n    <h6>Виберіть зручний для вас час: <span>{{select_time | date: 'HH:mm'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let t_rec of time_records\" (click)=\"onClickTime($event, t_rec)\">\n        {{t_rec | date: 'HH:mm'}}\n      </li>\n    </ul>\n    <div *ngIf=\"alertBool\" class=\"alert alert-warning alert-dismissible fade show mt-3\" role=\"alert\">\n      <strong>Виберіть дату і час!</strong> Це обов'язкові поля.\n      <button (click)=\"alertBool = false\" type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"addRecord()\">Записатись на прийом</button>\n  </div>\n</ng-template>\n\n<hr>\n<footer class=\"container\">\n  <p>© MEDINFO 2018</p>\n</footer>\n"
+module.exports = "<div class=\"container mt-4\">\n\n  <div class=\"row\">\n    <div class=\"col-md-9\">\n      <div class=\"card-columns mb-4\">\n        <div class=\"card\"\n             *ngFor=\"let doctor of doctors['doctors'] | docrorFilter: search | doctorGenderFilter: gender | doctorHospitalNameFilter: searchHospital\">\n          <img class=\"card-img-top\" src=\"{{url_base}}/{{doctor.user.photo_path}}\" alt=\"doctor photo\">\n          <div class=\"card-body\">\n            <h5 class=\"card-title\" (click)=\"onRouteDoctorId(doctor['user'].id)\">{{doctor['user'].last_name}}\n              {{doctor['user'].first_name}}\n              {{doctor['user'].mid_name}}</h5>\n            <h6 class=\"card-subtitle mb-2 text-muted\">{{doctor['type_doctor'].label}}</h6>\n            <p class=\"card-text\" *ngFor=\"let hospital of doctor.hospitals\" (click)=\"onRouteHospitaId(hospital.id)\">\n              <i class=\"fas fa-hospital-alt\"></i>\n              {{hospital['name']}}\n            </p>\n            <button class=\"btn btn-primary\" (click)=\"modalRecordAdd(modalRecord, doctor['doctor'].id)\">Записатись\n            </button>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-3\">\n      <div class=\"card-b widget\">\n        <div class=\"title\">Пошук</div>\n        <div class=\"item\">\n          <div class=\"form-group\">\n            <label>Пошук по імені</label>\n            <input type=\"text\" class=\"form-control form-control-sm\" placeholder=\"Введіть ім'я\" [ngModel]=\"search\"\n                   (ngModelChange)=\"search = $event\">\n          </div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\" style=\"width: 100%\">\n            <button type=\"button\" class=\"btn btn-info btn-sm active\" (click)=\"gender = ''\"\n                    [ngClass]=\"{active:gender==''}\">Всі\n            </button>\n            <button type=\"button\" class=\"btn btn-info btn-sm\" style=\"width: 50%\" (click)=\"gender = 'male'\"\n                    [ngClass]=\"{active:gender=='male'}\">Чоловік\n            </button>\n            <button type=\"button\" class=\"btn btn-info btn-sm\" style=\"width: 50%\" (click)=\"gender = 'female'\"\n                    [ngClass]=\"{active:gender=='female'}\">Жінка\n            </button>\n          </div>\n        </div>\n        <div class=\"item\">\n          <div class=\"form-group\">\n            <label>Пошук по назві клініки</label>\n            <input type=\"text\" class=\"form-control form-control-sm\" placeholder=\"Назва медичного закладу\"\n                   [ngModel]=\"searchHospital\" (ngModelChange)=\"searchHospital = $event\">\n          </div>\n          <div class=\"form-group\">\n            <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\" style=\"width: 100%\">\n              <button type=\"button\" class=\"btn btn-info btn-sm active\">Всі</button>\n              <button type=\"button\" class=\"btn btn-info btn-sm\" style=\"width: 50%\">Приватна</button>\n              <button type=\"button\" class=\"btn btn-info btn-sm\" style=\"width: 50%\">Державна</button>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <div class=\"input-group input-group-sm mb-3\">\n              <div class=\"input-group-prepend\">\n                <span class=\"input-group-text\">Місто</span>\n              </div>\n              <select class=\"custom-select form-control-sm\">\n                <option selected>Всі...</option>\n                <option value=\"1\">Івано-Франківськ</option>\n                <option value=\"2\">Київ</option>\n                <option value=\"3\">недоделаль</option>\n              </select>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <div class=\"input-group input-group-sm mb-3\">\n              <div class=\"input-group-prepend\">\n                <span class=\"input-group-text\">Спеціалізація</span>\n              </div>\n              <select class=\"custom-select form-control-sm\">\n                <option selected>Всі...</option>\n                <option value=\"1\">Амбулаторія</option>\n                <option value=\"2\">Стоматологія</option>\n                <option value=\"3\">Деспансер</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"item\">\n          <button type=\"button\" class=\"btn btn-secondary btn-block btn-sm\">Скинути фільтри</button>\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n\n<ng-template #modalRecord>\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title pull-left\">Запис на прийом</h4>\n    <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <h6>Виберіть день запису: <span>{{select_date | date: 'dd MMM'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let d_rec of date_records\" (click)=\"onClickDate($event, d_rec)\">\n        {{d_rec | date: 'dd MMM'}}\n        {{d_rec | date: 'EEEE'}}\n      </li>\n    </ul>\n    <h6>Виберіть зручний для вас час: <span>{{select_time | date: 'HH:mm'}}</span></h6>\n    <ul class=\"date-list\">\n      <li *ngFor=\"let t_rec of time_records\" (click)=\"onClickTime($event, t_rec)\">\n        {{t_rec | date: 'HH:mm'}}\n      </li>\n    </ul>\n    <div *ngIf=\"alertBool\" class=\"alert alert-warning alert-dismissible fade show mt-3\" role=\"alert\">\n      <strong>Виберіть дату і час!</strong> Це обов'язкові поля.\n      <button (click)=\"alertBool = false\" type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"addRecord(modalRef)\">Записатись на прийом</button>\n  </div>\n</ng-template>\n\n\n"
 
 /***/ }),
 
@@ -500,6 +735,7 @@ module.exports = "<div class=\"container mt-3\">\n  <div class=\"card-columns\">
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__record_record_service__ = __webpack_require__("./src/app/record/record.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_service__ = __webpack_require__("./src/app/config.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -515,13 +751,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var DoctorComponent = /** @class */ (function () {
-    function DoctorComponent(doctorService, modalService, recordService, configService, datePipe) {
+    function DoctorComponent(doctorService, modalService, recordService, configService, datePipe, router) {
         this.doctorService = doctorService;
         this.modalService = modalService;
         this.recordService = recordService;
         this.configService = configService;
         this.datePipe = datePipe;
+        this.router = router;
+        this.search = "";
+        this.gender = "";
+        this.searchHospital = "";
         /** onClick */
         this.elem_sel_date = null;
         this.elem_sel_time = null;
@@ -549,13 +790,16 @@ var DoctorComponent = /** @class */ (function () {
         this.select_date = null;
         this.select_time = null;
     };
-    DoctorComponent.prototype.addRecord = function () {
+    DoctorComponent.prototype.addRecord = function (modalRef) {
         var _this = this;
         if (this.elem_sel_date !== null && this.elem_sel_time !== null) {
             this.alertBool = false;
             this.recordService
                 .addRecord(this.doctor_id, this.datePipe.transform(this.select_date, 'dd-MM-yyyy') + ' ' + this.datePipe.transform(this.select_time, 'HH:mm'))
-                .subscribe(function (res) { return _this.recordService.getHttpUserRecords(); });
+                .subscribe(function (res) {
+                _this.recordService.getHttpUserRecords();
+                modalRef.hide();
+            });
         }
         else {
             this.alertBool = true;
@@ -577,8 +821,7 @@ var DoctorComponent = /** @class */ (function () {
         dd.setMinutes(0);
         for (var i = 0; i < 18; i++) {
             var dt = new Date(dd.setMinutes(dd.getMinutes() + 30));
-            if (dt.getDay() != 0)
-                this.time_records.push(dt);
+            this.time_records.push(dt);
             dd.setMinutes(dd.getMinutes() + 10);
         }
     };
@@ -604,6 +847,13 @@ var DoctorComponent = /** @class */ (function () {
             this.alertBool = false;
         }
     };
+    /**End onClick */
+    DoctorComponent.prototype.onRouteDoctorId = function (id) {
+        this.router.navigate(['doctor/' + id]);
+    };
+    DoctorComponent.prototype.onRouteHospitaId = function (id) {
+        this.router.navigate(['hospital/' + id]);
+    };
     DoctorComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-doctor',
@@ -614,7 +864,8 @@ var DoctorComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__["a" /* BsModalService */],
             __WEBPACK_IMPORTED_MODULE_3__record_record_service__["a" /* RecordService */],
             __WEBPACK_IMPORTED_MODULE_5__config_service__["a" /* ConfigService */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_common__["d" /* DatePipe */]])
+            __WEBPACK_IMPORTED_MODULE_4__angular_common__["d" /* DatePipe */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* Router */]])
     ], DoctorComponent);
     return DoctorComponent;
 }());
@@ -654,6 +905,10 @@ var DoctorService = /** @class */ (function () {
         return this.httpClient
             .get(this.configService.url_base + "/" + this.url_doctor_all);
     };
+    DoctorService.prototype.getDoctorId = function (id) {
+        return this.httpClient
+            .get(this.configService.url_base + "/doctor/get/" + id);
+    };
     DoctorService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
@@ -666,27 +921,66 @@ var DoctorService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/hospital/hospital.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ".img-hospital {\r\n  max-height: 150px;\r\n  max-height: 150px;\r\n}\r\n\r\n.list-group-border{\r\n  border: 1px solid #dfdfdf;\r\n  color: rgba(0,0,0,.7);\r\n  font-weight: 300;\r\n}\r\n\r\n.card{\r\n  border: 0;\r\n  border-radius: 0;\r\n  border-bottom: 1px solid #dfdfdf;\r\n}\r\n\r\nh5.card-title{\r\n  font-weight: 400;\r\n}\r\n\r\n.search-box{\r\n  border-radius: 3px 3px 0 0;\r\n  padding: 15px 15px 0 15px;\r\n  background: white;\r\n  border-bottom: 1px solid silver;\r\n}\r\n"
-
-/***/ }),
-
-/***/ "./src/app/hospital/hospital.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container mt-3\">\n\n  <div class=\"search-box\">\n    <div class=\"row\">\n      <div class=\"col-md-3\">\n        <div class=\"input-group input-group mb-3\">\n          <input type=\"text\" placeholder=\"Введіть назву клініки\" class=\"form-control\" aria-label=\"Large\"\n                 aria-describedby=\"inputGroup-sizing-sm\">\n          <div class=\"input-group-append\">\n            <span class=\"input-group-text\" id=\"inputGroup-sizing-\">\n              <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n            </span>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3\">\n          <select class=\"custom-select mb-3\">\n            <option selected>Всі міста</option>\n            <option value=\"1\">One</option>\n            <option value=\"2\">Two</option>\n            <option value=\"3\">Three</option>\n          </select>\n      </div>\n      <div class=\"col-md-3\">\n        <select class=\"custom-select mb-3\">\n          <option selected>Всі спеціалізації</option>\n          <option value=\"1\">One</option>\n          <option value=\"2\">Two</option>\n          <option value=\"3\">Three</option>\n        </select>\n      </div>\n      <div class=\"col-md-3\">\n        <div class=\"btn-group mb-3\" role=\"group\" aria-label=\"Basic example\">\n          <button type=\"button\" class=\"btn btn-secondary\">Приватна</button>\n          <button type=\"button\" class=\"btn btn-secondary\">Державна</button>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div *ngFor=\"let h of hospitals.hospitals\" class=\"card\">\n    <div class=\"card-body\">\n      <div class=\"row\">\n        <div class=\"col-md-4 col-sm-12 order-md-2\">\n          <h5 class=\"card-title\">\n            {{h.hospital.name}}\n          </h5>\n          <h6 class=\"card-subtitle mb-2 text-muted\">\n            <i class=\"fa fa-hospital-o\" aria-hidden=\"true\"></i>\n            {{h.type_hospital.name}}\n          </h6>\n        </div>\n        <div class=\"col-auto order-md-1\">\n          <img class=\"img-hospital rounded\" alt=\"Івано-Франківська міська поліклініка №1\" src=\"assets/img/default.png\">\n        </div>\n        <div class=\"col order-md-3\">\n          <ul class=\"list-group list-group-flush list-group-border\">\n            <li class=\"list-group-item\">\n              <i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> Пн - Пт: {{h.hospital.worktime}}\n            </li>\n            <li class=\"list-group-item\">\n              <i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i> {{h.hospital.adress}}\n            </li>\n            <li class=\"list-group-item\">\n              <i class=\"fa fa-phone\" aria-hidden=\"true\"></i> {{h.hospital.phone}}\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ "./src/app/hospital/hospital.component.ts":
+/***/ "./src/app/doctor/user-filter.pipe.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HospitalComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserFilterPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hospital_service__ = __webpack_require__("./src/app/hospital/hospital.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var UserFilterPipe = /** @class */ (function () {
+    function UserFilterPipe() {
+    }
+    UserFilterPipe.prototype.transform = function (items, searchText) {
+        if (!items)
+            return [];
+        if (!searchText)
+            return items;
+        searchText = searchText.toLowerCase();
+        return items.filter(function (it) {
+            return (it.user.last_name + ' ' + it.user.first_name + ' ' + it.user.mid_name).toLowerCase().includes(searchText);
+        });
+    };
+    UserFilterPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Pipe */])({
+            name: 'userFilter'
+        })
+    ], UserFilterPipe);
+    return UserFilterPipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/hospital-page/hospital-page.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/hospital-page/hospital-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"col-md-12\">\n    {{ hospital?.name }}\n  </div>\n</div>\n\n<!--\n{ \"hospital\": { \"adress\": \"Вулиця В'Ячеслава Чорновола, 59А, Івано-Франківськ\", \"id\": 1, \"img_logo\": null,\n\"img_panorama\": null, \"img_small\": null, \"location\": \"49.9679588,21.1777813\", \"name\": \"Івано-Франківська Міська Поліклініка №1\",\n\"obeys\": 0, \"phone\": \"+380971151567\", \"propert\": \"state\", \"type_hospital_id\": 1, \"worktime\": \"08:00-18:00\" },\n\"type_hospital\": { \"description\": \"Лікувально профілактичний заклад\", \"id\": 1, \"name\": \"Амбулаторія\" } }\n!-->\n"
+
+/***/ }),
+
+/***/ "./src/app/hospital-page/hospital-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HospitalPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hospital_hospital_service__ = __webpack_require__("./src/app/hospital/hospital.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -698,9 +992,120 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+var HospitalPageComponent = /** @class */ (function () {
+    function HospitalPageComponent(route, hospitlService) {
+        this.route = route;
+        this.hospitlService = hospitlService;
+    }
+    HospitalPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) { return _this.loadPage(params.id); });
+    };
+    HospitalPageComponent.prototype.loadPage = function (id) {
+        this.getHospital(id);
+    };
+    HospitalPageComponent.prototype.getHospital = function (id) {
+        var _this = this;
+        this.hospitlService.getHospitalById(id).subscribe(function (res) {
+            _this.hospital = res['hospital'];
+            _this.hospital_type = res['hospital'];
+        });
+        this.hospitlService.getDoctorInHospital(id).subscribe(function (res) { return _this.doctors = res; });
+    };
+    HospitalPageComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-hospital-page',
+            template: __webpack_require__("./src/app/hospital-page/hospital-page.component.html"),
+            styles: [__webpack_require__("./src/app/hospital-page/hospital-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
+            __WEBPACK_IMPORTED_MODULE_2__hospital_hospital_service__["a" /* HospitalService */]])
+    ], HospitalPageComponent);
+    return HospitalPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/hospital/hospital-name-filter.pipe.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HospitalNameFilterPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var HospitalNameFilterPipe = /** @class */ (function () {
+    function HospitalNameFilterPipe() {
+    }
+    HospitalNameFilterPipe.prototype.transform = function (items, searchText) {
+        if (!items)
+            return [];
+        if (!searchText)
+            return items;
+        searchText = searchText.toLowerCase();
+        return items.filter(function (it) {
+            return it.hospital.name.toLowerCase().includes(searchText);
+        });
+    };
+    HospitalNameFilterPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Pipe */])({
+            name: 'hospitalNameFilter'
+        })
+    ], HospitalNameFilterPipe);
+    return HospitalNameFilterPipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/hospital/hospital.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".img-hospital {\r\n  max-height: 200px;\r\n  max-height: 200px;\r\n}\r\n\r\n.list-group-border{\r\n  border: 1px solid #dfdfdf;\r\n  color: rgba(0,0,0,.7);\r\n  font-weight: 300;\r\n  padding: 15px 15px;\r\n}\r\n\r\n.card{\r\n  border: 0;\r\n  border-radius: 4px;\r\n  border-bottom: 1px solid #dfdfdf;\r\n  margin: 15px 0 0 0;\r\n  -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);\r\n          box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.card:hover{\r\n  -webkit-box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);\r\n          box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nh1.card-title{\r\n  cursor:pointer;\r\n  font-size: 1.15rem;\r\n  color: #454f5f;\r\n}\r\n\r\nh1.card-title:hover{\r\n  color: #0057b3;\r\n  text-decoration: underline;\r\n}\r\n\r\n.search-box{\r\n  border-radius: 5px;\r\n  padding: 15px 15px 0px 15px;\r\n  background: white;\r\n  -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);\r\n          box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.search-box:hover{\r\n  -webkit-box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);\r\n          box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.btn-secondary {\r\n  color: #fff;\r\n  background-color: #e9ecef;\r\n  border-color: #ced4da;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/hospital/hospital.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container mt-4 mb-4\">\n\n  <div class=\"row\">\n    <div class=\"col-md-9\">\n      <div class=\"card-b widget\">\n        <div class=\"title\">Медичні заклади</div>\n        <div class=\"item\" *ngFor=\"let h of hospitals.hospitals | hospitalNameFilter: hospitalName\">\n          <div class=\"row\">\n            <div class=\"col-md-4 col-sm-12 order-md-2\">\n              <h1 class=\"card-title\" (click)=\"onRouteHospitaId(h.hospital.id)\">\n                {{h.hospital.name}}\n              </h1>\n              <h6 class=\"card-subtitle mb-2 text-muted\">\n                <i class=\"far fa-hospital\"></i>\n                {{h.type_hospital.name}}\n              </h6>\n            </div>\n            <div class=\"col-auto order-md-1\">\n              <img class=\"img-hospital rounded\" alt=\"Івано-Франківська міська поліклініка №1\"\n                   src=\"assets/img/default.png\">\n            </div>\n            <div class=\"col order-md-4\">\n              <ul class=\"list-group list-group-flush\">\n                <li class=\"list-group-item\">\n                  <i class=\"far fa-clock\"></i> Пн - Пт: {{h.hospital.worktime}}\n                </li>\n                <li class=\"list-group-item\">\n                  <i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i> {{h.hospital.adress}}\n                </li>\n                <li class=\"list-group-item\">\n                  <i class=\"fa fa-phone\" aria-hidden=\"true\"></i> {{h.hospital.phone}}\n                </li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-3\">\n      <div class=\"card-b widget\">\n        <div class=\"title\">Пошук</div>\n        <div class=\"item\">\n          <div class=\"form-group\">\n            <label>Пошук по назві клініки</label>\n            <input type=\"text\" class=\"form-control form-control-sm\" placeholder=\"Назва медичного закладу\"\n                   [ngModel]=\"hospitalName\" (ngModelChange)=\"hospitalName = $event\">\n          </div>\n          <div class=\"form-group\">\n            <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\" style=\"width: 100%\">\n              <button type=\"button\" class=\"btn btn-info btn-sm active\">Всі</button>\n              <button type=\"button\" class=\"btn btn-info btn-sm\" style=\"width: 50%\">Приватна</button>\n              <button type=\"button\" class=\"btn btn-info btn-sm\" style=\"width: 50%\">Державна</button>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <div class=\"input-group input-group-sm mb-3\">\n              <div class=\"input-group-prepend\">\n                <span class=\"input-group-text\">Місто</span>\n              </div>\n              <select class=\"custom-select form-control-sm\">\n                <option selected>Всі...</option>\n                <option value=\"1\">Івано-Франківськ</option>\n                <option value=\"2\">Київ</option>\n                <option value=\"3\">недоделаль</option>\n              </select>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <div class=\"input-group input-group-sm mb-3\">\n              <div class=\"input-group-prepend\">\n                <span class=\"input-group-text\">Спеціалізація</span>\n              </div>\n              <select class=\"custom-select form-control-sm\">\n                <option selected>Всі...</option>\n                <option value=\"1\">Амбулаторія</option>\n                <option value=\"2\">Стоматологія</option>\n                <option value=\"3\">Деспансер</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"item\">\n          <button type=\"button\" class=\"btn btn-secondary btn-block btn-sm\">Скинути фільтри</button>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/hospital/hospital.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HospitalComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hospital_service__ = __webpack_require__("./src/app/hospital/hospital.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
 var HospitalComponent = /** @class */ (function () {
-    function HospitalComponent(hospitalService) {
+    function HospitalComponent(hospitalService, router) {
         this.hospitalService = hospitalService;
+        this.router = router;
+        this.hospitalName = "";
         this.hospitals = [];
     }
     HospitalComponent.prototype.ngOnInit = function () {
@@ -711,7 +1116,9 @@ var HospitalComponent = /** @class */ (function () {
         this.hospitalService
             .get_hospitals_all()
             .subscribe(function (res) { return _this.hospitals = res; });
-        console.log(this.hospitals);
+    };
+    HospitalComponent.prototype.onRouteHospitaId = function (id) {
+        this.router.navigate(['hospital/' + id]);
     };
     HospitalComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -719,7 +1126,8 @@ var HospitalComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/hospital/hospital.component.html"),
             styles: [__webpack_require__("./src/app/hospital/hospital.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__hospital_service__["a" /* HospitalService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__hospital_service__["a" /* HospitalService */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]])
     ], HospitalComponent);
     return HospitalComponent;
 }());
@@ -752,11 +1160,18 @@ var HospitalService = /** @class */ (function () {
     function HospitalService(httpClient, configService) {
         this.httpClient = httpClient;
         this.configService = configService;
-        this.url_hospital_all = "hospital/all";
     }
     HospitalService.prototype.get_hospitals_all = function () {
         return this.httpClient
-            .get(this.configService.url_base + "/" + this.url_hospital_all);
+            .get(this.configService.url_base + "/hospital/all");
+    };
+    HospitalService.prototype.getHospitalById = function (id) {
+        return this.httpClient
+            .get(this.configService.url_base + "/hospital/getId/" + id);
+    };
+    HospitalService.prototype.getDoctorInHospital = function (id) {
+        return this.httpClient
+            .get(this.configService.url_base + "/doctor/inHospital/" + id);
     };
     HospitalService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
@@ -780,7 +1195,7 @@ module.exports = ""
 /***/ "./src/app/medcard/complaints/complaints.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card-b-header\">\n  Скарги\n</div>\n\n<div class=\"card-b card-sticker\">\n  <div class=\"sticker orang-bg\">\n    <div class=\"day\">25</div>\n    <div class=\"mon\">Сер</div>\n  </div>\n  <div class=\"title orang\">\n    Скарги на здоровя\n  </div>\n  <div class=\"sub-title\">\n    Булит нога, ну нє внаурі булитьь\n  </div>\n</div>\n\n<div class=\"card-b card-sticker\">\n  <div class=\"sticker orang-bg\">\n    <div class=\"day\">25</div>\n    <div class=\"mon\">Сер</div>\n  </div>\n  <div class=\"title orang\">\n    Скарги на здоровя\n  </div>\n  <div class=\"sub-title\">\n    Булит нога, ну нє внаурі булитьь\n  </div>\n</div>\n"
+module.exports = "<div class=\"card-b widget\">\n  <div class=\"title\">Скарги</div>\n  <div class=\"item\">\n    Булит нога, ну нє внаурі булитьь\n    <div class=\"doctor-type\">\n      <span class=\"date\"><i class=\"fas fa-calendar-alt\"></i> 02.02.2009</span>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -830,7 +1245,7 @@ module.exports = ""
 /***/ "./src/app/medcard/indexe/indexe.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card-b-header\">\n  Показники\n</div>\n\n<div class=\"card-b card-sticker\">\n  <div class=\"sticker blue-bg\">\n    <div class=\"day\">25</div>\n    <div class=\"mon\">Сер</div>\n  </div>\n  <div class=\"title blue  \">\n    Вага\n  </div>\n  <div class=\"sub-title\">\n    90 КГ\n  </div>\n</div>\n\n<div class=\"card-b card-sticker\">\n  <div class=\"sticker blue-bg\">\n    <div class=\"day\">13</div>\n    <div class=\"mon\">Чер</div>\n  </div>\n  <div class=\"title blue\">\n    Кров'яний тиск\n  </div>\n  <div class=\"sub-title\">\n    120 / 60\n  </div>\n</div>\n"
+module.exports = "<div class=\"card-b card-indexes\">\n  <div class=\"row\">\n    <div class=\"col-md-2\">\n      <div class=\"icon\">\n        <i class=\"fas fa-file-medical-alt\"></i>\n      </div>\n      <div class=\"title\">Тиск</div>\n      <div class=\"index\">--</div>\n      <div class=\"type\">уд/хв</div>\n      <div class=\"date\">--.--.--</div>\n    </div>\n    <div class=\"col-md-2\">\n      <div class=\"icon\">\n        <i class=\"fas fa-chart-line\"></i>\n      </div>\n      <div class=\"title\">Зріст</div>\n      <div class=\"index\">--</div>\n      <div class=\"type\">см</div>\n      <div class=\"date\">--.--.--</div>\n    </div>\n    <div class=\"col-md-2\">\n      <div class=\"icon\">\n        <i class=\"fas fa-weight\"></i>\n      </div>\n      <div class=\"title\">Вага</div>\n      <div class=\"index\">--</div>\n      <div class=\"type\">кг</div>\n      <div class=\"date\">--.--.--</div>\n    </div>\n    <div class=\"col-md-2\">\n      <div class=\"icon\">\n        <i class=\"fas fa-tint\"></i>\n      </div>\n      <div class=\"title\">Цукор</div>\n      <div class=\"index\">--</div>\n      <div class=\"type\">ммоль/л</div>\n      <div class=\"date\">--.--.----</div>\n    </div>\n\n    <div class=\"col-md-2\">\n      <div class=\"icon\">\n        <i class=\"fas fa-procedures\"></i>\n      </div>\n      <div class=\"title\">Пульс</div>\n      <div class=\"index\">--</div>\n      <div class=\"type\">уд/хв</div>\n      <div class=\"date\">--.--.--</div>\n    </div>\n    <div class=\"col-md-2\">\n      <div class=\"icon add\" (click)=\"modal_add(content)\">\n        <i class=\"fas fa-plus-square\"></i>\n      </div>\n    </div>\n  </div>\n</div>\n\n<ng-template #content let-c=\"close\" let-d=\"dismiss\">\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title\">Добавити показник</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <form>\n      <div class=\"form-group\">\n        недоделаль\n      </div>\n    </form>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-outline-dark\">Save</button>\n  </div>\n</ng-template>\n"
 
 /***/ }),
 
@@ -840,6 +1255,8 @@ module.exports = "<div class=\"card-b-header\">\n  Показники\n</div>\n\
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IndexeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__medcard_service__ = __webpack_require__("./src/app/medcard/medcard.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__ = __webpack_require__("./node_modules/ngx-bootstrap/modal/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -850,10 +1267,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var IndexeComponent = /** @class */ (function () {
-    function IndexeComponent() {
+    function IndexeComponent(medcard, modalService) {
+        this.medcard = medcard;
+        this.modalService = modalService;
     }
-    IndexeComponent.prototype.ngOnInit = function () {
+    IndexeComponent.prototype.ngOnInit = function () { };
+    IndexeComponent.prototype.modal_add = function (template) {
+        this.modalRef = this.modalService.show(template);
     };
     IndexeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -861,7 +1284,8 @@ var IndexeComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/medcard/indexe/indexe.component.html"),
             styles: [__webpack_require__("./src/app/medcard/indexe/indexe.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__medcard_service__["a" /* MedcardService */],
+            __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__["a" /* BsModalService */]])
     ], IndexeComponent);
     return IndexeComponent;
 }());
@@ -880,7 +1304,7 @@ module.exports = ""
 /***/ "./src/app/medcard/info/info.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card-b card-info\">\n  <div class=\"group\">\n    <div class=\"title\">\n      Група крові {{medInfo['blood_type']}}\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Основний діагноз\n    </div>\n    <div class=\"source\">\n      {{ medInfo['main_diagnosis'] }}\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Алергологічний анамнез\n    </div>\n    <div class=\"source\">\n      {{ medInfo['allergic_history'] }}\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Непереносимість лікарських препаратів\n    </div>\n    <div class=\"source\">\n      {{ medInfo['drug_intolerance'] }}\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Фізичні травми\n    </div>\n    <div class=\"source\">\n      {{ medInfo['physical_injury'] }}\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"card-b card-info\">\n  <div style=\"float: right\">\n    <button type=\"button\" class=\"btn btn-primary\" *ngIf=\"!edit\" (click)=\"edit = true\">\n      <i class=\"fas fa-pencil-alt\"></i>\n    </button>\n    <button type=\"button\" class=\"btn btn-success\" *ngIf=\"edit\" (click)=\"seveInfo()\" >\n      <i class=\"far fa-save\"></i>\n    </button>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Група крові\n      <span *ngIf=\"!edit\">\n        {{medInfo['blood_type']}}\n      </span>\n      <div *ngIf=\"edit\" class=\"source\">\n        <select class=\"form-control\" *ngIf=\"edit\" [ngModel]=\"medInfo['blood_type']\" (ngModelChange)=\"medInfo['blood_type'] = $event\">\n          <option>-1</option>\n          <option>+1</option>\n          <option>-2</option>\n          <option>+2</option>\n          <option>-3</option>\n          <option>+3</option>\n          <option>-4</option>\n          <option>+4</option>\n        </select>\n      </div>\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Основний діагноз\n    </div>\n    <div class=\"source\">\n      <span *ngIf=\"!edit\">{{ medInfo['main_diagnosis'] }}</span>\n      <textarea *ngIf=\"edit\" class=\"form-control\" rows=\"3\" [ngModel]=\"medInfo['main_diagnosis']\" (ngModelChange)=\"medInfo['main_diagnosis'] = $event\"> </textarea>\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Алергологічний анамнез\n    </div>\n    <div class=\"source\">\n      <span *ngIf=\"!edit\">{{ medInfo['allergic_history'] }}</span>\n      <textarea *ngIf=\"edit\" class=\"form-control\" rows=\"3\" [ngModel]=\"medInfo['allergic_history']\" (ngModelChange)=\"medInfo['allergic_history'] = $event\"></textarea>\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Непереносимість лікарських препаратів\n    </div>\n    <div class=\"source\">\n      <span *ngIf=\"!edit\">{{ medInfo['drug_intolerance'] }}</span>\n      <textarea *ngIf=\"edit\" class=\"form-control\" rows=\"3\" [ngModel]=\"medInfo['drug_intolerance']\" (ngModelChange)=\"medInfo['drug_intolerance'] = $event\"></textarea>\n    </div>\n  </div>\n  <div class=\"group\">\n    <div class=\"title\">\n      Фізичні травми\n    </div>\n    <div class=\"source\">\n      <span *ngIf=\"!edit\">{{ medInfo['physical_injury'] }}</span>\n      <textarea *ngIf=\"edit\" class=\"form-control\" rows=\"3\" [ngModel]=\"medInfo['physical_injury']\"\n                (ngModelChange)=\"medInfo['physical_injury'] = $event\"></textarea>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -905,10 +1329,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var InfoComponent = /** @class */ (function () {
     function InfoComponent(medcardService) {
         this.medcardService = medcardService;
+        this.edit = false;
     }
     InfoComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.medcardService.getMedcardInfo().subscribe(function (res) { return _this.medInfo = res; });
+    };
+    InfoComponent.prototype.seveInfo = function () {
+        this.medcardService.setServerMedcardInfo(this.medInfo)
+            .subscribe(function (res) { return console.log(res); });
+        this.edit = false;
     };
     InfoComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -980,6 +1410,17 @@ var MedcardService = /** @class */ (function () {
     MedcardService.prototype.getMedcardInfo = function () {
         return this.medcardInfo.asObservable();
     };
+    MedcardService.prototype.setServerMedcardInfo = function (data) {
+        return this.httpClient
+            .post(this.configService.url_base + "/medcard/info/set", "access_token=" + this.authStatus.access_token + "&blood_type=" + data['blood_type'] + "&" +
+            ("physical_injury=" + data['physical_injury'] + "&main_diagnosis=" + data['main_diagnosis'] + "&") +
+            ("allergic_history=" + data['allergic_history'] + "&drug_intolerance=" + data['drug_intolerance'] + "&"), {
+            headers: {
+                'content': 'application/json',
+                'content-type': 'application/x-www-form-urlencoded'
+            }
+        });
+    };
     MedcardService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__auth_auth_service__["a" /* AuthService */],
@@ -1003,7 +1444,7 @@ module.exports = ".record-header{\r\n  border: 1px solid #dfdfdf;\r\n  border-ra
 /***/ "./src/app/record/list/list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card-b-header\">\n  Записи на прийом\n</div>\n<div *ngFor=\"let record of records\" class=\"card-b card-sticker\">\n  <div class=\"sticker\">\n    <div class=\"day\">{{record.record.date_record | date: 'dd MMM' }}</div>\n  </div>\n  <div class=\"title\">\n    {{record.user.last_name}} {{record.user.first_name}} {{record.user.mid_name}}\n  </div>\n  <div class=\"sub-title\">\n    Хірург\n  </div>\n  <div class=\"sub-title\">\n    {{record.hospital.name}}\n    <small>{{record.hospital.adress}}</small>\n  </div>\n  <div class=\"sub-title text-center pt-2\">\n    <button (click)=\"inf(template)\" class=\"btn btn-sm btn-link btn-inf\" type=\"button\">Детальніше</button>\n    <button (click)=\"modal_del(record.record.id, template)\" class=\"btn btn-sm btn-link btn-del\" type=\"button\">Відмінити</button>\n  </div>\n</div>\n\n\n\n<ng-template #template>\n  <div class=\"modal-body text-center\">\n    <p>Ви впевнені що хочете відмінити запис на прийом?</p>\n    <button type=\"button\" class=\"btn btn-default\" (click)=\"del(select_record_id); modalRef.hide()\" >Так</button>\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"modalRef.hide()\" >Ні</button>\n  </div>\n</ng-template>\n"
+module.exports = "<div class=\"card-b widget\">\n  <div class=\"title\">Записи на прийом</div>\n  <div class=\"item\" *ngFor=\"let record of records\">\n    <img class=\"photo\" src=\"{{url_base}}/{{record.user.photo_path}}\" alt=\"\">\n    <div class=\"doctor\">\n      {{record.user.last_name}} {{record.user.first_name}} {{record.user.mid_name}}\n    </div>\n    <div class=\"doctor-type\">\n      <span class=\"type\">{{record.type_doctor.label}}</span>\n      <span class=\"date\"><i class=\"fas fa-calendar-alt\"></i> {{record.record.date_record | date }}</span>\n    </div>\n    <div class=\"hospital\">\n      <span class=\"name\">\n        <i class=\"far fa-hospital\"></i>\n        {{record.hospital.name}}\n      </span>\n      <span class=\"address\">\n        <i class=\"fas fa-map-marker-alt\"></i>\n          {{record.hospital.adress}}\n      </span>\n      <span class=\"more\" (click)=\"modalMoreInfoShow(record,modalMoreInfo)\">Детальніше...</span>\n    </div>\n  </div>\n</div>\n\n<!--\n     <button (click)=\"modal_del(record.record.id, template)\" class=\"btn btn-sm btn-link btn-del\" type=\"button\">\n      Відмінити\n    </button>\n -->\n<ng-template #template>\n  <div class=\"modal-body text-center\">\n    <p>Ви впевнені що хочете відмінити запис на прийом?</p>\n    <button type=\"button\" class=\"btn btn-default\" (click)=\"del(select_record_id); modalRef.hide()\">Так</button>\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"modalRef.hide()\">Ні</button>\n  </div>\n</ng-template>\n\n\n<ng-template #modalMoreInfo let-c=\"close\" let-d=\"dismiss\">\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title\">Запис на прийом</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <div class=\"card-b widget\">\n      <div class=\"title\">Записи на прийом</div>\n      <div class=\"item\">\n        <img class=\"photo\" src=\"{{url_base}}/{{record_info.user.photo_path}}\" alt=\"\">\n        <div class=\"doctor\">\n          {{record_info.user.last_name}} {{record_info.user.first_name}} {{record_info.user.mid_name}}\n        </div>\n        <div class=\"doctor-type\">\n          <span class=\"type\">{{record_info.type_doctor.label}}</span>\n          <span class=\"date\"><i class=\"fas fa-calendar-alt\"></i> {{record_info.record.date_record | date }}</span>\n        </div>\n        <div class=\"hospital\">\n      <span class=\"name\">\n        <i class=\"far fa-hospital\"></i>\n        {{record_info.hospital.name}}\n      </span>\n          <span class=\"address\">\n        <i class=\"fas fa-map-marker-alt\"></i>\n          {{record_info.hospital.adress}}\n      </span>\n        </div>\n        <button type=\"button\" class=\"btn btn-danger\" (click)=\"modalRef.hide(); modal_del(record_info.record.id, template);\">Видалити</button>\n      </div>\n    </div>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-outline-dark\">Save</button>\n  </div>\n</ng-template>\n"
 
 /***/ }),
 
@@ -1015,6 +1456,7 @@ module.exports = "<div class=\"card-b-header\">\n  Записи на прийо�
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__record_service__ = __webpack_require__("./src/app/record/record.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__ = __webpack_require__("./node_modules/ngx-bootstrap/modal/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_service__ = __webpack_require__("./src/app/config.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1027,10 +1469,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ListComponent = /** @class */ (function () {
-    function ListComponent(recordService, modalService) {
+    function ListComponent(recordService, modalService, conf) {
         this.recordService = recordService;
         this.modalService = modalService;
+        this.conf = conf;
+        this.record_info = [];
+        this.url_base = this.conf.url_base;
     }
     ListComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1047,13 +1493,19 @@ var ListComponent = /** @class */ (function () {
         this.select_record_id = id;
         this.modalRef = this.modalService.show(template);
     };
+    ListComponent.prototype.modalMoreInfoShow = function (doc, template) {
+        this.record_info = doc;
+        this.modalRef = this.modalService.show(template);
+    };
     ListComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'record-list',
             template: __webpack_require__("./src/app/record/list/list.component.html"),
             styles: [__webpack_require__("./src/app/record/list/list.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__record_service__["a" /* RecordService */], __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__["a" /* BsModalService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__record_service__["a" /* RecordService */],
+            __WEBPACK_IMPORTED_MODULE_2_ngx_bootstrap_modal__["a" /* BsModalService */],
+            __WEBPACK_IMPORTED_MODULE_3__config_service__["a" /* ConfigService */]])
     ], ListComponent);
     return ListComponent;
 }());
@@ -1281,7 +1733,7 @@ var RegisterComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
             __WEBPACK_IMPORTED_MODULE_2__register_service__["a" /* RegisterService */],
             __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]])
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]])
     ], RegisterComponent);
     return RegisterComponent;
 }());
@@ -1345,9 +1797,109 @@ var RegisterService = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
             __WEBPACK_IMPORTED_MODULE_2__config_service__["a" /* ConfigService */],
             __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]])
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]])
     ], RegisterService);
     return RegisterService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/user-page-records/user-page-records.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/user-page-records/user-page-records.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <record-list></record-list>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/user-page-records/user-page-records.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserPageRecordsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var UserPageRecordsComponent = /** @class */ (function () {
+    function UserPageRecordsComponent() {
+    }
+    UserPageRecordsComponent.prototype.ngOnInit = function () {
+    };
+    UserPageRecordsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-user-page-records',
+            template: __webpack_require__("./src/app/user-page-records/user-page-records.component.html"),
+            styles: [__webpack_require__("./src/app/user-page-records/user-page-records.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], UserPageRecordsComponent);
+    return UserPageRecordsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/user-page-setting/user-page-setting.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/user-page-setting/user-page-setting.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  user-page-setting works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/user-page-setting/user-page-setting.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserPageSettingComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var UserPageSettingComponent = /** @class */ (function () {
+    function UserPageSettingComponent() {
+    }
+    UserPageSettingComponent.prototype.ngOnInit = function () {
+    };
+    UserPageSettingComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-user-page-setting',
+            template: __webpack_require__("./src/app/user-page-setting/user-page-setting.component.html"),
+            styles: [__webpack_require__("./src/app/user-page-setting/user-page-setting.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], UserPageSettingComponent);
+    return UserPageSettingComponent;
 }());
 
 
@@ -1364,7 +1916,7 @@ module.exports = ".user-card {\r\n  background: white;\r\n  border-radius: 2px;\
 /***/ "./src/app/user/card/card.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card-b\">\n  <div class=\"user-photo text-center pt-4\">\n    <i class=\"fa fa-camera upload-icon\" aria-hidden=\"true\" (click)=\"photoInput.click()\"></i>\n    <img class=\"photo\" src=\"{{url_base}}/{{userInfo._photo_path}}\" class=\"img-user\" alt=\"...\" (click)=\"photoInput.click()\">\n    <input type=\"file\" id=\"file\" (change)=\"handleFileInput($event.target.files)\" #photoInput>\n  </div>\n  <div class=\"user-info\">\n    <div class=\"user-name\">\n      {{userInfo._last_name}} {{userInfo._first_name}}\n    </div>\n    <h2 *ngIf=\"userInfo._adress != ''\" class=\"user-address\">\n      <i aria-hidden=\"true\" class=\"fa fa-map-marker\"></i>\n      {{userInfo._adress}}\n    </h2>\n    <h2 class=\"user-address\">\n      <i class=\"fa fa-envelope-square\" aria-hidden=\"true\"></i>\n      {{userInfo._email}}\n    </h2>\n  </div>\n</div>\n"
+module.exports = "<!--\n<div class=\"card-b\">\n  <div class=\"user-photo text-center pt-4\">\n    <i class=\"fa fa-camera upload-icon\" aria-hidden=\"true\" (click)=\"photoInput.click()\"></i>\n    <img class=\"photo\" src=\"{{url_base}}/{{userInfo._photo_path}}\" class=\"img-user\" alt=\"...\" (click)=\"photoInput.click()\">\n    <input type=\"file\" id=\"file\" (change)=\"handleFileInput($event.target.files)\" #photoInput>\n  </div>\n  <div class=\"user-info\">\n    <div class=\"user-name\">\n      {{userInfo._last_name}} {{userInfo._first_name}}\n    </div>\n    <h2 *ngIf=\"userInfo._adress != ''\" class=\"user-address\">\n      <i aria-hidden=\"true\" class=\"fa fa-map-marker\"></i>\n      {{userInfo._adress}}\n    </h2>\n    <h2 class=\"user-address\">\n      <i class=\"fa fa-envelope-square\" aria-hidden=\"true\"></i>\n      {{userInfo._email}}\n    </h2>\n  </div>\n</div>\n!-->\n<div class=\"card-b\">\n  <div class=\"user-photo\">\n    <img class=\"photo\" src=\"{{url_base}}/{{userInfo._photo_path}}\" alt=\"\" (click)=\"photoInput.click()\">\n    <input type=\"file\" id=\"file\" (change)=\"handleFileInput($event.target.files)\" #photoInput>\n  </div>\n  <div class=\"user-info\">\n    <div class=\"user-name\">\n      {{userInfo._last_name}} {{userInfo._first_name}}\n    </div>\n    <div *ngIf=\"userInfo._adress != ''\" class=\"user-address\">\n      <i aria-hidden=\"true\" class=\"fa fa-map-marker\"></i>\n      {{userInfo._adress}}\n    </div>\n    <div class=\"user-address\">\n      <i class=\"fa fa-envelope-square\" aria-hidden=\"true\"></i>\n      {{userInfo._email}}\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1446,7 +1998,7 @@ module.exports = ""
 /***/ "./src/app/user/user.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mt-4\">\n  <div class=\"row\">\n    <div class=\"col-md-3\">\n      <user-card></user-card>\n      <medcard-indexes></medcard-indexes>\n    </div>\n    <div class=\"col-md-6\">\n      <medcard-info></medcard-info>\n      <medcard-complaints></medcard-complaints>\n    </div>\n    <div class=\"col-md-3\">\n      <record-list></record-list>\n    </div>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container mt-4\">\n  <div class=\"row\">\n    <div class=\"col-md-3\">\n      <user-card></user-card>\n      <medcard-complaints></medcard-complaints>\n\n    </div>\n    <div class=\"col-md-6\">\n      <medcard-indexes></medcard-indexes>\n      <medcard-info></medcard-info>\n    </div>\n    <div class=\"col-md-3\">\n      <record-list></record-list>\n    </div>\n  </div>\n\n</div>\n"
 
 /***/ }),
 

@@ -90,7 +90,7 @@ def format_date_time(value):
 
 
 def blood_type(value):
-    if re.match(r"^(-?[1-4])$", value):
+    if re.match(r"^-?[1-4]$", value):
         return True
     else:
         return False
