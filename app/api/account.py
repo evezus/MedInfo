@@ -61,7 +61,7 @@ def account_getInfo():
         user_schema = models.UserSchema()
         output = user_schema.dump(user).data
 
-        if os.path.exists(os.path.join('dist\\' + output['photo_path'])) == False:
+        if os.path.exists(os.path.join('dist', output['photo_path'])) == False:
             output['photo_path'] = 'assets\\img\\user.jpg'
 
         return jsonify({'account': output})
