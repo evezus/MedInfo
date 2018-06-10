@@ -188,7 +188,7 @@ def account_set_photo():
             if file and validate.file_type(file.filename):
                 id = auxiliary_metods.id_generator()
                 filename = file.filename.split('.')[1]
-                pub_name = os.path.join('assets', 'photo',  id + '.' + filename);
+                pub_name = os.path.join('assets', 'photo',  id + '.' + filename)
                 file.save(os.path.join('dist', 'assets', 'photo', id + '.' + filename))
 
                 try:
