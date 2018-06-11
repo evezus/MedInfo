@@ -10,7 +10,7 @@ def email(value):
 
 
 def name(value):
-    if re.match(r"^[a-zA-Zа-яА-ЯіІїЇЬь']{3,50}$", value):
+    if re.match(r"^[a-zA-Zа-яА-ЯіІїЇЬьєЄ']{3,50}$", value):
         return True
     else:
         return False
@@ -45,7 +45,7 @@ def hash(value):
 
 
 def description(value):
-    if re.match(r"^[a-zA-Zа-яА-ЯіІїЇЬь\.\,\-\№\s*\d]{3,100}$", value):
+    if re.match(r"^.{3,1000}$", value):
         return True
     else:
         return False
